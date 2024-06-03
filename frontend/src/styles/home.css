@@ -1,0 +1,205 @@
+.home_header{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 30px;
+    z-index: 1000;
+}
+
+.home_main{
+    margin-top: 250px;
+}
+
+/* Heading and subheading section */
+.home_description_title h2{
+    max-width: 60%;
+}
+
+.home_description_subtitle h3{
+    max-width: 40%;
+}
+
+
+
+/* University logos scroll section */
+.home_uni_logos{
+    overflow: hidden;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 100% 100%;
+}
+.home_uni_logo_slider{
+    display: flex;
+    animation: 20s slide infinite linear;
+}
+
+.home_uni_logos img{
+    height: 40px;
+    margin: 0px 100px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* Customer video reviews section */
+.home_video_reviews_title p span{
+    color: var(--primary-color)
+}
+
+.home_video_reviews_subtitle p{
+    max-width: 30%;
+}
+
+.home_review_img{
+    height: 442px;
+    width: 274px;
+    border-radius: 20px;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.home_review_img video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+.home_review_content{
+    width: 100%;
+    height: 30%;
+}
+
+.reviewer_name{
+    max-width: 90px;
+}
+
+.home_play_button{
+    margin-top: auto;
+    width: 50px;
+    height: 45px;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(80px);
+}
+
+.home_play_button i{
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.home_all_reviews p,.home_all_reviews i{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
+
+/* Add task section */
+.add_task_right{
+     border: 1px solid #EEEEEE;
+     box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+}
+
+.add_task_right_head{
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.add_task_right_main{
+    min-width: 500px;
+}
+
+.add_task_checkbox{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+}
+
+.add_task_chat_title{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.add_task_chat_date{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+
+
+/* Assurance Section */
+.assurance_section{
+    max-width: 250px;
+}
+
+
+
+
+/* Features Video Section  */
+.home_features_video_main{
+    width: 70%;
+    height: 500px;
+}
+
+.home_features_video_main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home_features_video_main p{
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+    font-size: 28px;
+    max-width: 50%;
+}
+
+
+.home_features_play_button{
+    width: 70px;
+    height: 70px;
+    border-radius:26px;
+    border: 2px solid #fff;
+    backdrop-filter: blur(80px);
+}
+
+.home_features_play_button i{
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.home_customer_review_section{
+    max-width: 300px;
+}
+
+.home_reviewer{
+    max-width: 100px;
+}

@@ -1,0 +1,36 @@
+.footer_main{
+   padding-top: 50px;
+   margin-top: 200px;
+}
+
+.footer_section{
+    padding: 0px 40px;
+}
+
+.footer_section_title{
+   padding: 8px 0px;
+}
+
+.footer_section_title p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer_section_option{
+    padding: 8px 0px;
+}
+
+.footer_section_option p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.footer_bottom p{
+    color: #98A2B3;
+    font-size: 16px;
+    font-weight: 400;
+}
