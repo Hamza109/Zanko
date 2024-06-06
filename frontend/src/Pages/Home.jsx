@@ -1,4 +1,5 @@
 import React,{useRef,useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import HomeHeader from "../Components/home/HomeHeader/HomeHeader.jsx"
 import HomeFooter from "../Components/home/HomeFooter/HomeFooter.jsx"
@@ -16,6 +17,8 @@ import unilogo6 from "../assets/home/unilogo6.png"
 
 
 const Home = () =>{
+
+const navigate = useNavigate();
 
 const customerRevRef1 = useRef();
 const customerRevRef2 = useRef();
@@ -311,6 +314,12 @@ return (
         </div>
         
     </main>
+    
+    <div className="flex items-center justify-center p-10">
+        <button onClick={navigate('/uni-dashboard')} className="p-4 bg-black text-white">
+            To view the university dashboard
+        </button>
+    </div>
 
     <HomeFooter />
 

@@ -8,7 +8,7 @@ const UniSidebar = () => {
             <div className="flex items-center justify-center"><p>logo</p></div>
 
             <div className="uni_sidebar_section">
-                <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
+                <NavLink to="/uni-dashboard" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
                     <div className="uni_sidebar_option_left"></div>
                     <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Dashboard</p></div>
                 </NavLink>
