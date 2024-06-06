@@ -1,7 +1,7 @@
 import React,{useRef,useState} from 'react';
 import '../styles/home.css';
-import HomeHeader from "../Components/HomeHeader/HomeHeader.jsx"
-import HomeFooter from "../Components/HomeFooter/HomeFooter.jsx"
+import HomeHeader from "../Components/home/HomeHeader/HomeHeader.jsx"
+import HomeFooter from "../Components/home/HomeFooter/HomeFooter.jsx"
 import customer_rev1 from "../assets/home/customer_rev1.mp4"
 import customer_rev2 from "../assets/home/customer_rev2.mp4"
 import customer_rev3 from "../assets/home/customer_rev3.mp4"
@@ -50,7 +50,7 @@ return (
 
     <>
 
-    <div className="home_header"><HomeHeader /></div>
+    <div className="home_header_container"><HomeHeader /></div>
 
     <main className="home_main">
         
@@ -96,7 +96,7 @@ return (
         {/* Customer video reviews section */}
         <div className="py-12 home_video_reviews">
             <div className="flex justify-center mb-5 home_video_reviews_title">
-                <p className="font-semibold text-4xl">Over <span>1000+</span> people trust us</p>
+                <p className="font-semibold text-4xl"><span>Over</span> 1000+ <span>people trust us</span></p>
             </div>
 
             <div className="mb-8 flex justify-center home_video_reviews_subtitle">
@@ -243,7 +243,7 @@ return (
 
 
         {/* Assurances section */}
-        <div className="bg-black flex justify-center py-20 assurance_main">
+        <div className="flex justify-center py-20 assurance_main">
             <div className="assurance_section">
                 <div className="flex justify-center text-white text-3xl pb-7 assurance_logo"><i class="ri-puzzle-2-fill"></i></div>
                 <p className="text-white mb-5 text-base font-medium assurance_title">Connect with Uni in Real Time</p>
@@ -269,7 +269,7 @@ return (
 
 
         {/* Features Video Section */}
-        <div className="pt-52 home_features">
+        <div className="home_features">
 
             <div className="flex justify-center home_features_video">
                 <div className="flex relative justify-center items-center home_features_video_main" onClick={() => handlePlayPause(featuresVidRef.current)}>
@@ -293,18 +293,18 @@ return (
 
             <div className="flex justify-center gap-10 py-12 home_customer_reviews">
                 <div className="flex flex-col items-center home_customer_review_section">
-                    <p className="text-center font-lg mb-4 home_customer_review">"We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it."</p>
-                    <p className="text-center font-lg font-medium home_reviewer">Darlene Robertson</p>
+                    <p className="text-center text-white font-lg mb-4 home_customer_review">"We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it."</p>
+                    <p className="text-center text-white font-base font-medium home_reviewer">Darlene Robertson</p>
                 </div>
 
                 <div className="flex flex-col items-center home_customer_review_section">
-                    <p className="text-center font-lg mb-4 home_customer_review">"I didn’t know designing in Webflow could be this individualized. I’d never considered it before, but Landingfolio changed my mind."</p>
-                    <p className="text-center font-lg font-medium home_reviewer">Bessie Cooper</p>
+                    <p className="text-center text-white font-lg mb-4 home_customer_review">"I didn’t know designing in Webflow could be this individualized. I’d never considered it before, but Landingfolio changed my mind."</p>
+                    <p className="text-center text-white font-base font-medium home_reviewer">Bessie Cooper</p>
                 </div>
 
                 <div className="flex flex-col items-center home_customer_review_section">
-                    <p className="text-center font-lg mb-4 home_customer_review">"We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it."</p>
-                    <p className="text-center font-lg font-medium home_reviewer">Arlene McCoy</p>
+                    <p className="text-center text-white font-lg mb-4 home_customer_review">"We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it."</p>
+                    <p className="text-center text-white font-base font-medium home_reviewer">Arlene McCoy</p>
                 </div>
             </div>
 
@@ -313,7 +313,7 @@ return (
     </main>
 
     <HomeFooter />
-    
+
     </>
 );
 };

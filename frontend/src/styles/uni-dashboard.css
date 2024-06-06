@@ -1,0 +1,113 @@
+.uni_dashboard_container{
+    display: flex;
+    height: 100%;
+}
+
+.uni_dash_main_content{
+    flex-grow: 1;
+}
+
+/* Stat Cards styling Section */
+.uni_dash_stat_cards{
+    padding: 50px 0px;
+    margin: 0px 20px;
+}
+
+.uni_dash_stat_card_{
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+    padding: 14px;
+    width: 262px;
+    border-radius: 14px;
+}
+
+.uni_dash_stat_card_users_title{
+     font-size: 16px;
+     color: #606060;
+     font-weight: 500;
+     margin-bottom: 5px;
+}
+
+.uni_dash_stat_card_users{
+    font-size: 28px;
+    font-weight: 600;    
+}
+
+.uni_dash_stat_card_logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 23px;
+    font-size: 26px;
+}
+
+.uni_dash_stat_card_bottom{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;    
+}
+
+.uni_dash_stat_card_bottom span{
+    color: #606060;
+}
+
+/* Event Section styling */
+.uni_dash_event_section{
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+}
+
+.uni_dash_event_title_section{
+    padding: 20px 0px;
+}
+
+.uni_dash_event_month{
+    gap: 20px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #D5D5D5;
+    background-color: #FCFDFD;
+    cursor: pointer;
+    border: 1px solid #F5F6FA;
+}
+
+.uni_dash_event_month p{
+    font-size: 12px;
+}
+
+.uni_dash_event_month i{
+    font-size: 20px;
+}
+
+.uni_dash_event_section_head{
+    background-color: #F1F4F9;
+    display: grid;
+    grid-template-columns: 25% 15% 20% 13% 13% 14%;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.uni_dash_event_section_main{
+    display: grid;
+    grid-template-columns: 25% 15% 20% 13% 13% 14%;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    border-bottom: 1px solid #F5F6FA;
+}
+
+.uni_event_status_tag{
+   min-width: 95px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   color: #fff;
+   border-radius: 20px;;
+}
