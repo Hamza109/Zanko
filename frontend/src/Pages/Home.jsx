@@ -316,7 +316,7 @@ return (
     </main>
     
     <div className="flex items-center justify-center p-10">
-        <button onClick={navigate('/uni-dashboard')} className="p-4 bg-black text-white">
+        <button onClick={()=>navigate('/uni-dashboard')} className="p-4 bg-black text-white">
             To view the university dashboard
         </button>
     </div>
