@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes, Route, Navigate} from 'react-router-dom'
 import Home from './../Pages/Home';
-import UniversityDashboard from './../Pages/UniversityDashboard';
+import ChatScreen from '../Pages/ChatScreen';
 
 
 
@@ -12,6 +12,7 @@ return (
         <Route path='/' element={<Navigate to='/home' />} />
         <Route path='/home' element={<Home/>} />
         <Route path='/uni-dashboard' element={<UniversityDashboard />} />
+        <Route path='/chat'  element={<ChatScreen/>} />
             
     </Routes>
 );
