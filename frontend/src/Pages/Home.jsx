@@ -321,6 +321,12 @@ return (
         </button>
     </div>
 
+    <div className="flex items-center justify-center p-10">
+        <button onClick={()=>navigate('/chat')} className="p-4 bg-black text-white">
+            To view the Chat Section
+        </button>
+    </div>
+
     <HomeFooter />
 
     </>

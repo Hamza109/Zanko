@@ -1,7 +1,6 @@
 import React from 'react'
 import StudentSection from '../Components/StudentCard/StudentSection'
 import ApplyButton from '../Components/StudentCard/ApplyButton'
-import HomeFooter from '../Components/HomeFooter/HomeFooter'
 import uniBackground from '../assets/chatScreen/uniBackground.png'
 import '../styles/chatScreen.css'
 
