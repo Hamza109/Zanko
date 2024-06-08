@@ -1,0 +1,8 @@
+.uni_dashboard_container{
+    display: flex;
+    height: 100%;
+}
+
+.uni_dash_main_content{
+    flex-grow: 1;
+}
