@@ -1,0 +1,119 @@
+/* StudentCard.css */
+.student-card {
+  
+    z-index: 2;
+  }
+
+  
+  
+  .student-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 16px;
+
+  }
+  
+  .chat-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .chat-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .student-card a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .student-card a:hover {
+    text-decoration: none;
+  }
+  
+
+
+  
+
+  
+  
+  
+
+  /* StudentCard.css */
+.student-card {
+  
+    z-index: 2;
+  }
+
+  
+  
+  .student-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 16px;
+
+  }
+  
+  .chat-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .chat-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .student-card a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .student-card a:hover {
+    text-decoration: none;
+  }
+  
+
+
+  /* CustomStyles.css */
+
+
+.gradient-border {
+  display: inline-block;
+  padding: 3px; /* Adjust the padding to control the border width */
+  background: linear-gradient(
+    90deg,
+    #44BCFF 0%,
+    #44B0FF 23%,
+    #FF44EC 49%,
+    #FF44EC 74%,
+    #FF675E 100%
+  );
+  border-radius: 1rem;  /* Adjust the border-radius */
+}
+
+.gradient-border > .inner-content {
+  background: #000; /* Adjust this to match your card's background */
+  padding: 1rem; /* Adjust the padding for your content */
+  border-radius: 1rem; /* Adjust the border-radius */
+}
+
+/* CustomStyles.css */
+.purple-shadow {
+  box-shadow: 0 0 15px 5px rgba(178, 114, 245, 1) /* Adjust the values as needed */
+}
+
+  

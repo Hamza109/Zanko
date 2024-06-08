@@ -1,0 +1,31 @@
+/* StudentSection.css */
+.student-section {
+ 
+    padding: 40px 0;
+  }
+  
+  .student-section h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  
+  .student-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gradient-text {
+    font-family: 'Times New Roman', Times, serif; /* Use the correct font family as per the design */
+    font-size: 38px; /* Adjust the font size to match the design */
+    font-weight: bold; /* Adjust the font weight to match the design */
+    background: linear-gradient(90deg, #BF657D 38%, #BF73A4 45%, #5298F2 70%, #4895D9 38%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff; /* or any other color you want for the subtext */
+  }
