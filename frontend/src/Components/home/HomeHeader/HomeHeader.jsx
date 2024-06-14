@@ -16,7 +16,7 @@ const HomeHeader = () => {
                     <div className="header_options">
                         <div className="header_option"><p>Platform</p></div>
                         <div className="header_option"><p>Solutions</p></div>
-                        <div className="header_option"><p>For Students</p></div>
+                <NavLink to='/for-student'  ><div className="header_option"><p>For Students</p></div></NavLink> 
                         <div className="header_option"><p>Pricing</p></div>
                         <div className="header_option"><p>Resources</p></div>                    
                     </div>

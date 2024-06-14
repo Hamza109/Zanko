@@ -1,7 +1,6 @@
 import React from 'react'
 import StudentSection from '../Components/StudentCard/StudentSection'
 import ApplyButton from '../Components/StudentCard/ApplyButton'
-import HomeFooter from '../Components/HomeFooter/HomeFooter'
 import uniBackground from '../assets/chatScreen/uniBackground.png'
 import '../styles/chatScreen.css'
 
@@ -9,7 +8,7 @@ const ChatScreen = () => {
   return (
     <div className='chat-container' >
 
-<header className="header ">
+{/* <header className="header ">
       <div>
 <p className='header-text'>Zanko</p>
       </div>
@@ -17,7 +16,7 @@ const ChatScreen = () => {
 
     <section className="hero-section">
       <img src={uniBackground} alt="University" />
-    </section>
+    </section> */}
 
         <StudentSection/>
        

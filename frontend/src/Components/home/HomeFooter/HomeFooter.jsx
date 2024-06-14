@@ -9,7 +9,7 @@ const HomeFooter = () => {
            <div className="footer_section">
                <div className="footer_section_title"><p>Products</p></div>
                <NavLink to="" className="footer_section_option"><p>Platform</p></NavLink>
-               <NavLink to="" className="footer_section_option"><p>Chat</p></NavLink>
+               <NavLink to="/chat" className="footer_section_option"><p>Chat</p></NavLink>
                <NavLink to="" className="footer_section_option"><p>Discover</p></NavLink>
                <NavLink to="" className="footer_section_option"><p>Events</p></NavLink>
                <NavLink to="" className="footer_section_option"><p>Community</p></NavLink>

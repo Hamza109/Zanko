@@ -1,0 +1,68 @@
+.feature-text-left{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent;  */
+    max-width: 80%;
+  
+}
+
+.faq-header-text{
+    color: #000;
+font-family: "HK Grotesk";
+
+text-align: left;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.faq-header-container{
+    max-width: 75%;
+
+}
+
+.text-gradient {
+    background: var(--Multi-Color, linear-gradient(90deg, #44BCFF -0.55%, #44B0FF 22.86%, #FF44EC 48.36%, #FF44EC 73.33%, #FF675E 99.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+   
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+
+  .gradient-text-container{
+
+  padding:57px 101px 57px 101px;
+  margin-left: 180px;
+  margin-top: 125px;
+    
+  }
+  
+
+  .search-section-container{
+    background: linear-gradient(90deg, rgba(68, 188, 255, 0.30) -0.55%, rgba(68, 176, 255, 0.30) 22.86%, rgba(255, 68, 236, 0.30) 48.36%, rgba(255, 68, 236, 0.30) 73.33%, rgba(255, 103, 94, 0.30) 99.34%);
+  padding-top: 108px;
+  padding-bottom: 215px;
+  }
+
+  .search-header-text{
+    color: #161819;
+font-family: Poppins;
+
+font-style: normal;
+font-weight: 500;
+line-height: 115%; /* 77.05px */
+letter-spacing: 0.67px;
+  }

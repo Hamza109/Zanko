@@ -26,12 +26,14 @@
   cursor: pointer;
 }
 
-.gradient-button:hover {
-  background-color: #f0f0f0; /* Adjust the hover background color */
-}
+
 
   
   .apply-button:hover {
     background: linear-gradient(to right, #5a0eb7, #1e62d0);
+  }
+
+  .purple-shadow {
+    box-shadow: 0 0 15px 5px rgba(178, 114, 245, 1) /* Adjust the values as needed */
   }
   

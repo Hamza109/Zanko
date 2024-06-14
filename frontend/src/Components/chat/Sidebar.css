@@ -1,0 +1,32 @@
+/* Sidebar.css */
+.sidebar {
+    width: 80px; /* Adjust the width as needed */
+    border-radius: 50px; /* Add border radius */
+
+    padding: 8px; /* Add padding for internal spacing */
+    margin: 70px 24px 30px 27px
+  }
+
+  .sidebar-shadow {
+    box-shadow: 0 0 15px 5px #323232 /* Adjust the values as needed */
+  }
+  
+  .icon-wrapper {
+    padding: 12px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(136,0,255,1) 0%, rgba(255,0,204,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-wrapper svg {
+    color: white;
+  }
+  
+  .icon-text{
+    font-size: 8px;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 10px;
+  }
