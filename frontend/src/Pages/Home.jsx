@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import HomeHeader from "../Components/home/HomeHeader/HomeHeader.jsx"
 import HomeFooter from "../Components/home/HomeFooter/HomeFooter.jsx"
+import Assurance from "../Components/home/AssuranceSection/Assurance.jsx"
+import chatPage from '../assets/home/chatPage.png'
 import customer_rev1 from "../assets/home/customer_rev1.mp4"
 import customer_rev2 from "../assets/home/customer_rev2.mp4"
 import customer_rev3 from "../assets/home/customer_rev3.mp4"
@@ -172,103 +174,19 @@ return (
 
 
         {/* Never miss any task */}
-        <div className="flex flex-wrap justify-center py-24 px-3 gap-20 add_task">
-            <div className="max-w-md p-3 add_task_left">
-                <p className="text-3xl font-semibold mb-10 add_task_title">Never miss any task</p>
-                <p className="text-base font-normal mb-5 text-gray-500 add_task_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
-                <button className="py-3 px-5 font-medium text-base text-white rounded-xl bg-black">Add First Task</button>
-            </div>
-
-            <div className="rounded-xl pb-5 add_task_right">
-                <div className="flex p-3 gap-1.5 add_task_right_head">
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#ff4a4a"}}></div>
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#fdb241"}}></div>
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#6cd929"}}></div>
+        <div className="home_add_task">
+                <div className="home_add_task_main">
+                    <p className="home_add_task_title">Never miss any Task</p>
+                    <p className="home_add_task_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+                    <div><button>Book Demo</button></div>
                 </div>
 
-                <p className="p-5 text-xs font-medium add_task_right_title">YOUR TASKS</p>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Chat with Peers</p>
-                            <p className="add_task_chat_date">Dec 19,2021 10:45 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Chat with University Counsellors</p>
-                            <p className="add_task_chat_date">Dec 08,2021 04:10 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Review the Resume</p>
-                            <p className="add_task_chat_date">Dec 04,2021 03:35 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">View the Application progress</p>
-                            <p className="add_task_chat_date">Nov 27,2021 1110 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-
-            </div>
+                <img src={chatPage}/>
         </div>
 
 
         {/* Assurances section */}
-        <div className="flex justify-center items-center py-20 flex-wrap assurance_main">
-            <div className="assurance_section">
-                <div className="flex justify-center text-white text-3xl pb-7 assurance_logo"><i class="ri-puzzle-2-fill"></i></div>
-                <p className="text-white mb-5 text-base font-medium assurance_title">Connect with Uni in Real Time</p>
-                <p className="text-gray-500 text-sm font-normal assurance_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-            </div>
-
-            <div className="w-px bg-gray-500 mx-32 assurance_partition"></div>
-
-            <div className="assurance_section">
-                <div className="flex justify-center text-white text-3xl pb-7 assurance_logo"><i class="ri-lock-fill"></i></div>
-                <p className="text-white mb-5 text-base font-medium assurance_title">Secured & Safe Messages</p>
-                <p className="text-gray-500 text-sm font-normal assurance_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-            </div>
-
-            <div className="w-px bg-gray-500 mx-16 assurance_partition"></div>
-
-            <div className="assurance_section">
-                <div className="flex justify-center text-white text-3xl pb-7 assurance_logo"><i class="ri-chat-4-fill"></i></div>
-                <p className="text-white mb-5 text-base font-medium assurance_title">24/7 Customer Support</p>
-                <p className="text-gray-500 text-sm font-normal assurance_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-            </div>
-        </div>
+        <Assurance />        
 
 
         {/* Features Video Section */}

@@ -1,0 +1,259 @@
+.home_header_container{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 30px;
+    z-index: 10;
+}
+
+.pricing_main{
+    margin-top: 150px;
+}
+
+/* Pricing section styles */
+.pricing_plans_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 20px;
+}
+
+.pricing_plans_title,.pricing_plans_subtitle{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing_plans_title{
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 90%;
+}
+
+.pricing_plans_subtitle{
+    max-width: 50%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pricing_plans_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.pricing_plan_card{
+   border-radius: 20px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 300px;
+}
+
+.pricing_plan_card_top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.pricing_plan_card_bottom{
+    padding: 20px 0px;
+}
+
+.pricing_plan_card_bottom_element{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.pricing_plan_card_bottom_element i{
+    font-size: 24px;
+}
+
+.pricing_plan_card_bottom_element p{
+    color: #AEAEAE;
+    font-size: 14px;
+}
+
+.pricing_plan_card_bttn{
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 30px;
+    border-radius: 10px;
+}
+
+
+/* personal exp section styles */
+.pricing_personalexp{
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pricing_personalexp img{
+    width: 600px;
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+    border-radius: 10px;
+}
+
+.pricing_personalexp_main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 280px;
+}
+
+.pricing_exp_title{
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 500px;
+}
+
+.pricing_exp_title span{
+    color: #7B70FF;
+}
+
+.pricing_exp_desc{
+    font-size: 16px;
+    font-weight: 400;
+    color: #3F3F46;
+    max-width: 500px;
+}
+
+.pricing_personalexp_main button{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+/* Pricing plan description section styles */
+.pricing_plan_desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.pricing_plan_desc_card{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.pricing_plan_desc_card_title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pricing_plan_desc_card_element{
+    display: flex;
+    gap: 30px;
+}
+
+.pricing_plan_desc_card_element i{
+    font-size: 20px;
+}
+
+.pricing_plan_desc_card_element p{
+    font-size: 18px;
+}
+
+
+/* Newsletter Section styles */
+.pricing_newsletter_section{
+    background: linear-gradient(90deg, rgba(68, 188, 255, 0.3) -0.55%, rgba(68, 176, 255, 0.3) 22.86%, rgba(255, 68, 236, 0.3) 48.36%, rgba(255, 68, 236, 0.3) 73.33%, rgba(255, 103, 94, 0.3) 99.34%);
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pricing_newsletter_section_top{
+    padding-left: 200px;
+}
+
+.pricing_newsletter_section_title{
+     font-size: 50px;
+     font-weight: 500;
+}
+
+.pricing_newsletter_section_subtitle{
+     font-size: 36px;
+     font-weight: 400;
+}
+
+.pricing_newsletter_section_bottom{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 200px;
+}
+
+.pricing_newsletter_section_bottom_main{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.pricing_newsletter_section_bottom_logo{
+    margin-left: 20px;
+    padding: 0px 5px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #F8F8F8;
+}
+
+.pricing_newsletter_section_bottom_logo i{
+    color: #6C777C;
+    font-size: 20px;
+}
+
+.pricing_newsletter_section_bottom input{
+      height: 60px;
+      padding: 0px 20px;
+      font: 18px;
+      min-width: 500px;
+}
+
+.pricing_newsletter_section_bottom input:focus{
+    outline: none;
+}
+
+.pricing_newsletter_bttn{
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    font-size: 26px;
+    height: 60px;
+    padding: 0px 30px; 
+    border-radius: 0px 14px 14px 0px;
+}

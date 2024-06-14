@@ -10,10 +10,11 @@
     );
     border-radius: 20px;
     padding: 1px;
+    position: relative;
 }
 
 .home_header_main{
-    background-color: #1E1E1E;
+    background-color: #000000;
     padding: 17px 20px;
     display: flex;
     justify-content: space-between;
@@ -23,29 +24,43 @@
     border-radius: 20px;
 }
 
-.header_right{
+.home_header_right{
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.header_options{
+.home_header_options{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header_option{
+.home_header_option{
     padding: 10px;
     cursor: pointer;
 }
 
-.header_option p{
+.home_header_option p{
     margin: 0;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+}
+
+.home_header_option p:hover,.home_header_option.active p{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .home_header_signup_border{
@@ -62,7 +77,7 @@
 }
 
 .home_header_signup_border button{
-    background-color: #1E1E1E;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 24px;
@@ -87,16 +102,49 @@
 }
 
 .home_header_hammenu{
-  background-color: #1E1E1E;
+  background-color: #000000;
   padding: 0px 8px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .home_header_hammenu i{
     font-size: 28px;
-    cursor: pointer;
     color: #fff;
 }
+
+.home_header_dropdown{
+    background-color: #000000;
+    position: absolute;
+    top: 100%;
+    transform: translateY(5px);
+    left:0;
+    right: 0;
+    border-radius: 20px;
+    padding: 10px 20px 20px 10px;
+}
+
+.home_header_dropdown_option{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid #fff;
+}
+
+.home_header_dropdown_option p{
+    /* background-color: blue; */
+    color: #fff;
+    font-size: 14px;
+}
+
+.home_header_dropdown_option i{
+    /* background-color: blue; */
+    color: #fff;
+    font-size: 14px;
+}
+
+
 
 /* Screen size <= 768px (Mobile Phones)*/
 @media (max-width: 768px) {
@@ -104,7 +152,7 @@
         display: block;
     }
 
-    .header_options{
+    .home_header_options{
         display: none;
     }
 
@@ -116,7 +164,7 @@
 
 /* Screen size >768px (Tablets and Small Laptops)*/
 @media (min-width: 769px) and (max-width: 1200px){
-    .header_option p{
+    .home_header_option p{
     font-size: 14px;
     }
     .home_header_signup_border button{

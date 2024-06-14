@@ -56,7 +56,7 @@
 
 /* Customer video reviews section */
 .home_video_reviews{
-    background-color: #1E1E1E;
+    background-color: #000000;
 }
 
 .home_video_reviews_title p{
@@ -77,7 +77,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent;  */
 }
 
 .home_video_reviews_subtitle p{
@@ -92,7 +91,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent;  */
     max-width: 50%;
     font-size: 16px;
 }
@@ -156,66 +154,53 @@
 
 
 /* Add task section */
-.add_task_right{
-     border: 1px solid #EEEEEE;
-     box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+.home_add_task{
+    padding: 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
-.add_task_right_head{
-    border-bottom: 1px solid #F5F5F5;
+.home_add_task img{
+    width: 600px;
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+    border-radius: 10px;
 }
 
-.add_task_right_main{
-    min-width: 500px;
+.home_add_task_main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 280px;
 }
 
-.add_task_checkbox{
-    height: 16px;
-    width: 16px;
-    border: 1px solid #EEEEEE;
-    border-radius: 3px;
+.home_add_task_title{
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 500px;
 }
 
-.add_task_chat_title{
-    font-size: 12px;
-    margin-bottom: 5px;
+.home_add_task_desc{
+    font-size: 16px;
     font-weight: 400;
+    color: #3F3F46;
+    max-width: 500px;
 }
 
-.add_task_chat_date{
-    font-size: 12px;
-    font-weight: 400;
-    color: gray;
+.home_add_task_main button{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
-
-
-/* Assurance Section */
-.assurance_main{
-    background-color: #1E1E1E;
-    border: 5px solid;
-    border-image: linear-gradient(
-        to right, 
-        #44BCFF 0%, 
-        #44B0FF 23%, 
-        #FF44EC 49%, 
-        #FF44EC 74%, 
-        #FF675E 100%
-    ) 1;
-    margin-bottom: 100px;
-}
-
-.assurance_partition{
-    height: 100px;
-}
-
-.assurance_section{
-    max-width: 250px;
-}
 
 /* Features Video Section  */
 .home_features{
-    background-color: #1E1E1E;
+    background-color: #000000;
     padding: 50px 0px;
 }
 .home_features_video_main{
@@ -313,7 +298,7 @@
     }
 
     .add_task_right_main{
-        min-width: 320px;
+        min-width: 300px;
     }
 
     .add_task_checkbox{
@@ -361,7 +346,7 @@
     }
 }
 
-/* Screen size > 768px and <=1200px (tablets/small Laptops)*/
+/* Screen size > 768px and <=1200px (tablets/small-laptops)*/
 @media (min-width: 769px) and (max-width: 1200px) {
     .home_description_title h2{
         max-width: 70%;
