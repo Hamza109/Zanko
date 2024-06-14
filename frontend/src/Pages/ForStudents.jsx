@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeHeader from '../Components/home/HomeHeader/HomeHeader'
 import HomeFooter from '../Components/home/HomeFooter/HomeFooter'
-import AssuranceSection from '../Components/assuranceSection/AssuranceSection'
+import Assurance from '../Components/home/AssuranceSection/Assurance'
 import ApplyButton from '../Components/StudentCard/ApplyButton'
 import ChatDemo from '../assets/forStudents/ChatDemo.png'
 import '../styles/forStudents.css'
@@ -126,7 +126,7 @@ const ForStudents = () => {
 
 
     {/* Assurances section */}
-   <AssuranceSection />
+   <Assurance />
 
 
 {/* Faq Section */}

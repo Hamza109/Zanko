@@ -1,0 +1,130 @@
+.uni_dashboard_container{
+    display: flex;
+    height: 100%;
+}
+
+.uni_dash_main_content{
+    flex-grow: 1;
+}
+
+/* Add ambassador section */
+.uni_buddies_add_ambas{
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+    margin: 50px 20px;
+    border-radius: 14px;
+}
+
+.uni_buddies_add_ambas_main{
+    display:flex;
+    gap: 100px;
+}
+
+.uni_buddies_add_ambas_section{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni_buddies_add_ambas_section label{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.uni_buddies_add_ambas_section input{
+    height: 36px;
+    width: 250px;
+    padding: 5px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.uni_buddies_add_ambas_section input:focus{
+    outline: none;
+}
+
+.uni_buddies_add_ambas_bttn{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.uni_buddies_add_ambas_bttn button{
+    font-size: 14px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-weight: 500;
+}
+
+.uni_buddies_add_ambas_bttn_save:hover{
+    background-color: #4880FF;
+    color: #fff;
+    border: none;
+}
+
+.uni_buddies_add_ambas_bttn_clear:hover{
+    background-color: #F93C65;
+    color: #fff;
+    border: none;
+}
+
+
+/* Ambassador List section */
+.uni_buddies_view_ambas{
+    margin: 20px;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+    border-radius: 14px;
+}
+
+.uni_buddies_view_ambas_section{
+    border-bottom: 1px solid #E6E5E5;
+    border-left: 1px solid #E6E5E5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.uni_buddies_view_ambas_section_row{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-top: 1px solid #E6E5E5;
+}
+
+.uni_buddies_view_ambas_section_element{
+    border-right: 1px solid #E6E5E5;
+    padding: 10px;
+}
+
+.uni_buddies_view_ambas_section_bttn{
+    border-top: 1px solid #E6E5E5;
+    border-right: 1px solid #E6E5E5;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.uni_buddies_view_ambas_section_bttn button{
+    font-size: 14px;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-weight: 500;
+}
+
+.uni_buddies_view_ambas_section_edit:hover{
+    background-color: #4880FF;
+    color: #fff;
+    border: none;
+}
+
+.uni_buddies_view_ambas_section_delete:hover{
+    background-color: #F93C65;
+    color: #fff;
+    border: none;
+}

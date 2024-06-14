@@ -12,25 +12,21 @@ const UniSidebar = () => {
                     <div className="uni_sidebar_option_left"></div>
                     <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Dashboard</p></div>
                 </NavLink>
-                <NavLink to="/products" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
+                <NavLink to="/anlytics" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
                     <div className="uni_sidebar_option_left"></div>
-                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Products</p></div>
+                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Analytics</p></div>
                 </NavLink>
-                <NavLink to="/favorites" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
+                <NavLink to="/buddies" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
                     <div className="uni_sidebar_option_left"></div>
-                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Favorites</p></div>
+                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Buddies</p></div>
                 </NavLink>
                 <NavLink to="/inbox" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
                     <div className="uni_sidebar_option_left"></div>
                     <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Inbox</p></div>
                 </NavLink>
-                <NavLink to="/university-lists" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
+                <NavLink to="/prospectors" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
                     <div className="uni_sidebar_option_left"></div>
-                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">University Lists</p></div>
-                </NavLink>
-                <NavLink to="/checklists" className={({ isActive }) => isActive ? 'uni_sidebar_option active' : 'uni_sidebar_option'}>
-                    <div className="uni_sidebar_option_left"></div>
-                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Checklists</p></div>
+                    <div className="uni_sidebar_option_main"><p className="text-sm font-medium">Prospects</p></div>
                 </NavLink>
             </div>
 

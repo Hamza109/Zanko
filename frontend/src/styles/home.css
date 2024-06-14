@@ -7,16 +7,18 @@
 }
 
 .home_main{
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 /* Heading and subheading section */
 .home_description_title h2{
     max-width: 60%;
+    font-size: 40px;
 }
 
 .home_description_subtitle h3{
     max-width: 40%;
+    font-size: 24px;
 }
 
 
@@ -31,12 +33,14 @@
 }
 .home_uni_logo_slider{
     display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
     animation: 20s slide infinite linear;
 }
 
 .home_uni_logos img{
     height: 40px;
-    margin: 0px 100px;
+    margin: 0px 10px;
 }
 
 @keyframes slide {
@@ -55,6 +59,12 @@
     background-color: #000000;
 }
 
+.home_video_reviews_title p{
+    color: #fff;
+    font-size: 36px;
+    max-width: 90%;
+}
+
 .home_video_reviews_title p span{
     background: linear-gradient(
         to right,
@@ -67,13 +77,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent;  */
 }
-
-.home_video_reviews_title p{
-    color: #fff;
-}
- 
 
 .home_video_reviews_subtitle p{
     background: linear-gradient(
@@ -87,8 +91,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent;  */
-    max-width: 30%;
+    max-width: 50%;
+    font-size: 16px;
+}
+
+.home_video_reviews_main{
+     flex-wrap: wrap; 
 }
 
 .home_review_img{
@@ -146,58 +154,49 @@
 
 
 /* Add task section */
-.add_task_right{
-     border: 1px solid #EEEEEE;
-     box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+.home_add_task{
+    padding: 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
-.add_task_right_head{
-    border-bottom: 1px solid #F5F5F5;
+.home_add_task img{
+    width: 600px;
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 50px 10px;
+    border-radius: 10px;
 }
 
-.add_task_right_main{
-    min-width: 500px;
+.home_add_task_main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 280px;
 }
 
-.add_task_checkbox{
-    height: 16px;
-    width: 16px;
-    border: 1px solid #EEEEEE;
-    border-radius: 3px;
+.home_add_task_title{
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 500px;
 }
 
-.add_task_chat_title{
-    font-size: 12px;
-    margin-bottom: 5px;
+.home_add_task_desc{
+    font-size: 16px;
     font-weight: 400;
+    color: #3F3F46;
+    max-width: 500px;
 }
 
-.add_task_chat_date{
-    font-size: 12px;
-    font-weight: 400;
-    color: gray;
+.home_add_task_main button{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
-
-
-/* Assurance Section */
-.assurance_main{
-    background-color: #000000;
-    border: 5px solid;
-    border-image: linear-gradient(
-        to right, 
-        #44BCFF 0%, 
-        #44B0FF 23%, 
-        #FF44EC 49%, 
-        #FF44EC 74%, 
-        #FF675E 100%
-    ) 1;
-    margin-bottom: 100px;
-}
-
-.assurance_section{
-    max-width: 250px;
-}
 
 /* Features Video Section  */
 .home_features{
@@ -208,6 +207,7 @@
     width: 70%;
     height: 500px;
 }
+
 
 .home_features_video_main video{
     position: absolute;
@@ -248,6 +248,170 @@
     max-width: 300px;
 }
 
+.home_customer_review{
+    font-size: 18px;
+}
+
 .home_reviewer{
     max-width: 100px;
+    font-size: 16px;
+}
+
+
+
+/* Screen size <= 768px (Mobile Phones)*/
+@media (max-width: 768px) {
+    .home_description_title h2{
+        max-width: 70%;
+        font-size: 28px;
+    }
+    
+    .home_description_subtitle h3{
+        max-width: 50%;
+        font-size: 16px;
+    }
+
+    .home_uni_logo_slider{
+        padding: 0px 10px;
+    }
+
+    .home_uni_logos img{
+        height: 16px;
+    }
+
+    .home_video_reviews_title p{
+        font-size: 28px;
+    }
+
+    .home_video_reviews_subtitle p{
+        max-width: 80%;
+        font-size: 12px;
+    }
+
+    .home_review_img{
+        height: 400px;
+        width: 250px;
+    }
+
+    .home_all_reviews p,.home_all_reviews i{
+        font-size: 12px;
+    }
+
+    .add_task_right_main{
+        min-width: 300px;
+    }
+
+    .add_task_checkbox{
+        height: 12px;
+        width: 12px;
+        border-radius: 3px;
+    }
+    
+    .add_task_chat_title{
+        font-size: 10px;
+    }
+    
+    .add_task_chat_date{
+        font-size: 10px;
+    }
+
+    .home_features_video_main{
+        width: 90%;
+        height: 200px;
+    }
+
+    .home_features_video_main p{
+        bottom: 10px;
+        font-size: 14px;
+        max-width: 80%;
+    }
+
+    .home_features_play_button{
+        width: 50px;
+        height: 50px;
+        border-radius:16px;
+    }
+    
+    .home_features_play_button i{
+        font-size: 20px;
+        margin-left: 3px;
+    }
+
+    .home_customer_review{
+        font-size: 14px;
+    }
+    
+    .home_reviewer{
+        font-size: 12px;
+    }
+}
+
+/* Screen size > 768px and <=1200px (tablets/small-laptops)*/
+@media (min-width: 769px) and (max-width: 1200px) {
+    .home_description_title h2{
+        max-width: 70%;
+        font-size: 30px;
+    }
+    
+    .home_description_subtitle h3{
+        max-width: 50%;
+        font-size: 18px;
+    }
+
+    .home_uni_logo_slider{
+        padding: 0px 40px;
+    }
+
+    .home_uni_logos img{
+        height: 30px;
+    }
+
+    .home_video_reviews_title p{
+        color: #fff;
+        font-size: 32px;
+    }
+
+    .home_video_reviews_subtitle p{
+        max-width: 80%;
+        font-size: 14px;
+    }
+
+    .home_features_video_main{
+        width: 90%;
+        height: 350px;
+    }
+
+    .home_features_video_main p{
+        bottom: 20px;
+        font-size: 18px;
+        max-width: 80%;
+    }
+
+    .home_features_play_button{
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+    }
+    
+    .home_features_play_button i{
+        font-size: 26px;
+    }
+
+    .home_customer_review{
+        font-size: 16px;
+    }
+    
+    .home_reviewer{
+        font-size: 14px;
+    }
+}
+
+/* adjusting assurance section */
+@media (max-width: 1150px){
+    .assurance_main{
+        flex-direction: column;
+    }
+    .assurance_partition{
+        height: 70px;
+    }
 }

@@ -13,7 +13,7 @@ import unilogo3 from "../assets/home/unilogo3.png"
 import unilogo4 from "../assets/home/unilogo4.png"
 import unilogo5 from "../assets/home/unilogo5.png"
 import unilogo6 from "../assets/home/unilogo6.png"
-import AssuranceSection from '../Components/assuranceSection/AssuranceSection.jsx';
+import Assurance from '../Components/home/AssuranceSection/Assurance.jsx';
 
 
 
@@ -247,7 +247,7 @@ return (
 
 
         {/* Assurances section */}
-       <AssuranceSection />
+       <Assurance/>
 
 
         {/* Features Video Section */}
