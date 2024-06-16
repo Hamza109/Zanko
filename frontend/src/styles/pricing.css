@@ -10,11 +10,45 @@
     margin-top: 150px;
 }
 
+
+/* Heading and sub heading section */
+.pricing_description_title{
+    max-width: 60%;
+    font-size: 40px;
+}
+
+.pricing_description_subtitle{
+    max-width: 40%;
+    font-size: 24px;
+}
+
+.pricing_description_bttn{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.pricing_description_bttn button{
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
 /* Pricing section styles */
 .pricing_plans_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
     padding: 50px 20px;
 }
@@ -35,21 +69,15 @@
 
 .pricing_plans_title{
     font-size: 36px;
-    font-weight: 600;
     max-width: 90%;
 }
 
 .pricing_plans_subtitle{
     max-width: 50%;
     font-size: 16px;
-    text-align: center;
 }
 
 .pricing_plans_main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     padding: 50px 20px;
 }
@@ -105,9 +133,6 @@
 /* personal exp section styles */
 .pricing_personalexp{
     padding: 80px 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -118,8 +143,6 @@
 }
 
 .pricing_personalexp_main{
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     min-width: 280px;
 }
@@ -153,9 +176,6 @@
 
 /* Pricing plan description section styles */
 .pricing_plan_desc{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 50px 20px;
     gap: 30px;
 }
@@ -193,36 +213,23 @@
 .pricing_newsletter_section{
     background: linear-gradient(90deg, rgba(68, 188, 255, 0.3) -0.55%, rgba(68, 176, 255, 0.3) 22.86%, rgba(255, 68, 236, 0.3) 48.36%, rgba(255, 68, 236, 0.3) 73.33%, rgba(255, 103, 94, 0.3) 99.34%);
     padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
     gap: 40px;
 }
 
 .pricing_newsletter_section_top{
-    padding-left: 200px;
+    transform: translateX(-200px);
 }
 
 .pricing_newsletter_section_title{
      font-size: 50px;
-     font-weight: 500;
 }
 
 .pricing_newsletter_section_subtitle{
      font-size: 36px;
-     font-weight: 400;
 }
 
 .pricing_newsletter_section_bottom{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 200px;
-}
-
-.pricing_newsletter_section_bottom_main{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
+    transform: translateX(200px);
 }
 
 .pricing_newsletter_section_bottom_logo{
@@ -256,4 +263,130 @@
     height: 60px;
     padding: 0px 30px; 
     border-radius: 0px 14px 14px 0px;
+}
+
+
+
+
+
+/* Screen size <= 768px (Mobile Phones)*/
+@media (max-width: 768px) {
+    .pricing_description_title{
+        max-width: 90%;
+        font-size: 28px;
+    }
+    
+    .pricing_description_subtitle{
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    .pricing_plans_title{
+        font-size: 28px;
+        max-width: 90%;
+    }
+    
+    .pricing_plans_subtitle{
+        max-width: 90%;
+        font-size: 12px;
+    }
+
+    .pricing_plan_card{
+        padding: 20px;
+        width: 280px;
+     }
+
+    .pricing_plan_desc_card_element i{
+        font-size: 18px;
+    }
+    
+    .pricing_plan_desc_card_element p{
+        font-size: 16px;
+    }
+
+    .pricing_plan_desc_card_title{
+        font-size: 24px;
+    }
+    
+    .pricing_newsletter_section_top{
+        transform: translateX(0px);
+    }
+    
+    .pricing_newsletter_section_title{
+         font-size: 32px;
+    }
+    
+    .pricing_newsletter_section_subtitle{
+         font-size: 24px;
+    }
+    
+    .pricing_newsletter_section_bottom{
+        transform: translateX(0px);
+    }
+    
+    .pricing_newsletter_section_bottom_logo i{
+        font-size: 14px;
+    }
+
+    .pricing_newsletter_section_bottom_logo{
+        margin-left: 10px;
+        padding: 0px 5px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .pricing_newsletter_section_bottom input{
+          height: 40px;
+          padding: 0px 10px;
+          font: 14px;
+          min-width: 80px;
+    }
+    
+    .pricing_newsletter_bttn{
+        height: 100%;
+        font-size: 26px;
+        height: 40px;
+        padding: 0px 10px; 
+        border-radius: 0px 14px 14px 0px;
+    }
+    
+    
+    
+    
+    
+}
+
+
+/* Screen size > 768px and <=1200px (tablets/small-laptops)*/
+@media (min-width: 769px) and (max-width: 1200px) {   
+    .pricing_description_title{
+        max-width: 70%;
+        font-size: 30px;
+    }
+    
+    .pricing_description_subtitle{
+        max-width: 50%;
+        font-size: 18px;
+    }
+
+    .pricing_newsletter_section_top{
+        transform: translateX(-100px);
+    }
+    
+    .pricing_newsletter_section_title{
+         font-size: 40px;
+    }
+    
+    .pricing_newsletter_section_subtitle{
+         font-size: 32px;
+    }
+    
+    .pricing_newsletter_section_bottom{
+        transform: translateX(100px)
+    }
+    
+    .pricing_newsletter_section_bottom input{
+          font: 16px;
+          min-width: 300px;
+    }     
+    
 }

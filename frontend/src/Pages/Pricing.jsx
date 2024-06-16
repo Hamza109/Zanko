@@ -14,23 +14,19 @@ const Pricing = ()=>{
 
         <main className="pricing_main">
 
-            {/* Heading and subheading section same as home section*/}
-            <div className="pb-24 home_description">
-                <div className="flex justify-center mb-8 home_description_title">
-                    <h2 className="text-center font-semibold">faucibus pulvinar elementum integer enim neque volutpat</h2>
-                </div>
-            
-                <div className="flex justify-center home_description_subtitle">
-                    <h3 className="font-normal text-center">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
-                </div>
+            {/* Heading and subheading section */}
+            <div className="pb-24 flex flex-col gap-5 items-center home_description">
+                <h2 className="text-center font-semibold pricing_description_title">faucibus pulvinar elementum integer enim neque volutpat</h2>          
+                <h3 className="font-normal text-center pricing_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
+                <div className="pricing_description_bttn" ><button>Book Demo</button></div>
             </div>
 
 
             {/* Plans Section */}
-            <div className="bg-black pricing_plans_section">
-                <p className="pricing_plans_title">Choose the plan you trust</p>
-                <p className="pricing_plans_subtitle">Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin panel for your SaaS.</p>
-                <div className="pricing_plans_main">
+            <div className="bg-black flex flex-col items-center pricing_plans_section">
+                <p className="text-center font-semibold pricing_plans_title">Choose the plan you trust</p>
+                <p className="text-center pricing_plans_subtitle">Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin panel for your SaaS.</p>
+                <div className="flex flex-wrap justify-center items-center pricing_plans_main">
                     {/* Card 1 */}
                     <div className="p-7 pricing_plan_card" style={{backgroundColor: '#fff'}}>
                         <div className="pricing_plan_card_top" style={{ borderBottom: '1px solid #D5D5D5' }}>
@@ -105,8 +101,8 @@ const Pricing = ()=>{
 
 
             {/* personal exp section */}
-            <div className="pricing_personalexp">
-                <div className="pricing_personalexp_main">
+            <div className="flex justify-center flex-wrap pricing_personalexp">
+                <div className="flex flex-col pricing_personalexp_main">
                     <p className="pricing_exp_title">Stunning <span>pricing</span> for your Personal experience.</p>
                     <p className="pricing_exp_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
                     <div><button>Book Demo</button></div>
@@ -121,7 +117,7 @@ const Pricing = ()=>{
 
 
             {/* Plan description section */}
-            <div className="pricing_plan_desc">
+            <div className="flex flex-wrap justify-center pricing_plan_desc">
                 <div className="pricing_plan_desc_card">
                     <p className="pricing_plan_desc_card_title">Personal Plan</p>
                     <div className="pricing_plan_desc_card_element">
@@ -173,13 +169,13 @@ const Pricing = ()=>{
 
 
             {/* Newsletter Section */}
-            <div className="pricing_newsletter_section">
+            <div className="flex flex-col items-center pricing_newsletter_section">
                 <div className="pricing_newsletter_section_top">
-                    <p className="pricing_newsletter_section_title">Send us your Mail</p>
-                    <p className="pricing_newsletter_section_subtitle">We will get you a perfect plan</p>
+                    <p className="font-medium pricing_newsletter_section_title">Send us your Mail</p>
+                    <p className="font-normal pricing_newsletter_section_subtitle">We will get you a perfect plan</p>
                 </div>
-                <div className="pricing_newsletter_section_bottom">
-                    <div className="pricing_newsletter_section_bottom_main">
+                <div className="flex items-center justify-center pricing_newsletter_section_bottom">
+                    <div className="flex items-center bg-white pricing_newsletter_section_bottom_main">
                         <div className="pricing_newsletter_section_bottom_logo"><i class="ri-mail-line"></i></div>
                         <input type="text" placeholder="yourmail123@gmail.com" />
                     </div>

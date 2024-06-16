@@ -5,6 +5,7 @@ import Assurance from '../Components/home/AssuranceSection/Assurance'
 import ApplyButton from '../Components/StudentCard/ApplyButton'
 import ChatDemo from '../assets/forStudents/ChatDemo.png'
 import '../styles/forStudents.css'
+import chatPage from '../assets/home/chatPage.png'
 const ForStudents = () => {
   return (
 <>
@@ -14,15 +15,14 @@ const ForStudents = () => {
 <main className="home_main">
     
     {/* Heading and subheading section */}
-    <div className="pb-24 home_description">
-        <div className="flex justify-center items-center mb-8 home_description_title">
-            <h2 className="font-semibold text-lg lg:text-7xl sm:text-2xl  "  >Received an Offer letter to study somewhere ?</h2>
+    <div className="pb-24 flex flex-col gap-5 items-center forstudents_description">
+        <h2 className="text-center font-semibold forstudents_description_title">Received an Offer letter to study somewhere ?</h2>          
+    
+        <div className='apply'>
+      <ApplyButton  title={'Join Community'}/>
         </div>
-        <div className='items-center flex justify-center' style={{marginTop:112}}>
-        <ApplyButton  title={'Join Community'}/>
-        </div>
-
     </div>
+
 
 
 
@@ -45,78 +45,14 @@ const ForStudents = () => {
 
 
     {/* Never miss any task */}
-    <div className="flex flex-col flex-col-reverse lg:flex-row justify-center py-24 px-4 gap-24 add_task">
-    
+    <div className="flex flex-col flex-col-reverse lg:flex-row justify-center py-24 px-4 gap-10 add_task">
+    <div className="home_add_task">
+    <img  style={{width: 500}} src={chatPage} />
+    </div>
+       
 
-        <div className="rounded-xl pb-5 add_task_right">
-            <div className="flex p-3 gap-1.5 add_task_right_head">
-                <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#ff4a4a"}}></div>
-                <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#fdb241"}}></div>
-                <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#6cd929"}}></div>
-            </div>
-
-            <p className="p-5 text-xs font-medium add_task_right_title">YOUR TASKS</p>
-
-            <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                <div className="flex gap-2.5 add_task_right_main_left">
-                    <div className="add_task_checkbox"></div>
-                    <div className="add_task_chat">
-                        <p className="add_task_chat_title">Chat with Peers</p>
-                        <p className="add_task_chat_date">Dec 19,2021 10:45 PM</p>
-                    </div>
-                </div>
-                
-                <div className="add_task_right_main_right"></div>
-
-            </div>
-
-            <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                <div className="flex gap-2.5 add_task_right_main_left">
-                    <div className="add_task_checkbox"></div>
-                    <div className="add_task_chat">
-                        <p className="add_task_chat_title">Chat with University Counsellors</p>
-                        <p className="add_task_chat_date">Dec 08,2021 04:10 PM</p>
-                    </div>
-                </div>
-                
-                <div className="add_task_right_main_right"></div>
-
-            </div>
-
-            <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                <div className="flex gap-2.5 add_task_right_main_left">
-                    <div className="add_task_checkbox"></div>
-                    <div className="add_task_chat">
-                        <p className="add_task_chat_title">Review the Resume</p>
-                        <p className="add_task_chat_date">Dec 04,2021 03:35 PM</p>
-                    </div>
-                </div>
-                
-                <div className="add_task_right_main_right"></div>
-
-            </div>
-
-            <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                <div className="flex gap-2.5 add_task_right_main_left">
-                    <div className="add_task_checkbox"></div>
-                    <div className="add_task_chat">
-                        <p className="add_task_chat_title">View the Application progress</p>
-                        <p className="add_task_chat_date">Nov 27,2021 1110 PM</p>
-                    </div>
-                </div>
-                
-                <div className="add_task_right_main_right"></div>
-
-                
-
-            </div>
-
-            
-
-
-        </div>
         <div className="max-w-md flex items-center justify-center ">
-            <p className="text-2xl lg:text-5xl text-center font-semibold mb-10 add_task_title ">Get in touch with Community</p>
+            <p className="text-3xl lg:text-5xl text-center font-semibold mb-10 add_task_title ">Get in touch with Community</p>
 
         </div>
     </div>
