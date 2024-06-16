@@ -31,6 +31,8 @@ const featuresVidRef = useRef();
 const [currentVideo, setCurrentVideo] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  
+
   const handlePlayPause = (videoRef) => {
     if (currentVideo && currentVideo !== videoRef) {
       currentVideo.pause();
@@ -55,6 +57,11 @@ return (
     <>
 
     <div className="home_header_container"><HomeHeader /></div>
+
+
+
+
+
 
     <main className="home_main">
         
