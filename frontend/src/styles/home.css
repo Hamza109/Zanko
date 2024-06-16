@@ -11,16 +11,37 @@
 }
 
 /* Heading and subheading section */
-.home_description_title h2{
+.home_description_title{
     max-width: 60%;
     font-size: 40px;
 }
 
-.home_description_subtitle h3{
+.home_description_subtitle{
     max-width: 40%;
     font-size: 24px;
 }
 
+.home_description_bttn{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.home_description_bttn button{
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 /* University logos scroll section */
@@ -157,8 +178,8 @@
 .home_add_task{
     padding: 80px 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -196,6 +217,7 @@
     padding: 10px 30px;
     border-radius: 10px;
 }
+
 
 
 /* Features Video Section  */
@@ -261,13 +283,13 @@
 
 /* Screen size <= 768px (Mobile Phones)*/
 @media (max-width: 768px) {
-    .home_description_title h2{
-        max-width: 70%;
+    .home_description_title{
+        max-width: 90%;
         font-size: 28px;
     }
     
-    .home_description_subtitle h3{
-        max-width: 50%;
+    .home_description_subtitle{
+        max-width: 90%;
         font-size: 16px;
     }
 
@@ -348,12 +370,12 @@
 
 /* Screen size > 768px and <=1200px (tablets/small-laptops)*/
 @media (min-width: 769px) and (max-width: 1200px) {
-    .home_description_title h2{
+    .home_description_title{
         max-width: 70%;
         font-size: 30px;
     }
     
-    .home_description_subtitle h3{
+    .home_description_subtitle{
         max-width: 50%;
         font-size: 18px;
     }
@@ -403,15 +425,5 @@
     
     .home_reviewer{
         font-size: 14px;
-    }
-}
-
-/* adjusting assurance section */
-@media (max-width: 1150px){
-    .assurance_main{
-        flex-direction: column;
-    }
-    .assurance_partition{
-        height: 70px;
     }
 }

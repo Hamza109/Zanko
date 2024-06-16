@@ -14,6 +14,7 @@ import unilogo4 from "../assets/home/unilogo4.png"
 import unilogo5 from "../assets/home/unilogo5.png"
 import unilogo6 from "../assets/home/unilogo6.png"
 import Assurance from '../Components/home/AssuranceSection/Assurance.jsx';
+import chatPage from '../assets/home/chatPage.png'
 
 
 
@@ -59,17 +60,11 @@ return (
     <main className="home_main">
         
         {/* Heading and subheading section */}
-        <div className="pb-24 home_description">
-            <div className="flex justify-center mb-8 home_description_title">
-                <h2 className="text-center font-semibold text-5xl">faucibus pulvinar elementum integer enim neque volutpat</h2>
-            </div>
-            
-            <div className="flex justify-center home_description_subtitle">
-                <h3 className="text-2xl font-normal text-center">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
-            </div>
-
+        <div className="pb-24 flex flex-col gap-5 items-center home_description">
+            <h2 className="text-center font-semibold home_description_title">faucibus pulvinar elementum integer enim neque volutpat</h2>
+            <h3 className="w-full font-normal text-center home_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
+            <div className="home_description_bttn" ><button>Book Demo</button></div>
         </div>
-
 
 
 
@@ -173,76 +168,14 @@ return (
 
 
         {/* Never miss any task */}
-        <div className="flex justify-center py-24 gap-24 add_task">
-            <div className="max-w-md add_task_left">
-                <p className="text-3xl font-semibold mb-10 add_task_title">Never miss any task</p>
-                <p className="text-base font-normal mb-5 text-gray-500 add_task_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
-                <button className="py-3 px-5 font-medium text-base text-white rounded-xl bg-black">Add First Task</button>
-            </div>
-
-            <div className="rounded-xl pb-5 add_task_right">
-                <div className="flex p-3 gap-1.5 add_task_right_head">
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#ff4a4a"}}></div>
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#fdb241"}}></div>
-                    <div className="h-2.5 w-2.5 rounded-md task_head_option" style={{backgroundColor:"#6cd929"}}></div>
+        <div className="home_add_task">
+                <div className="home_add_task_main">
+                    <p className="home_add_task_title">Never miss any Task</p>
+                    <p className="home_add_task_desc">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+                    <div><button>Book Demo</button></div>
                 </div>
 
-                <p className="p-5 text-xs font-medium add_task_right_title">YOUR TASKS</p>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Chat with Peers</p>
-                            <p className="add_task_chat_date">Dec 19,2021 10:45 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Chat with University Counsellors</p>
-                            <p className="add_task_chat_date">Dec 08,2021 04:10 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">Review the Resume</p>
-                            <p className="add_task_chat_date">Dec 04,2021 03:35 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-                <div className="flex justify-between px-5 mb-4 add_task_right_main">
-                    <div className="flex gap-2.5 add_task_right_main_left">
-                        <div className="add_task_checkbox"></div>
-                        <div className="add_task_chat">
-                            <p className="add_task_chat_title">View the Application progress</p>
-                            <p className="add_task_chat_date">Nov 27,2021 1110 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div className="add_task_right_main_right"></div>
-
-                </div>
-
-
-            </div>
+                <img src={chatPage}/>
         </div>
 
 
@@ -273,7 +206,7 @@ return (
 
             </div>
 
-            <div className="flex justify-center gap-10 py-12 home_customer_reviews">
+            <div className="flex flex-wrap px-5 justify-center gap-10 py-12 home_customer_reviews">
                 <div className="flex flex-col items-center home_customer_review_section">
                     <p className="text-center text-white font-lg mb-4 home_customer_review">"We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it."</p>
                     <p className="text-center text-white font-base font-medium home_reviewer">Darlene Robertson</p>

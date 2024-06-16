@@ -5,10 +5,9 @@ import ChatScreen from '../Pages/ChatScreen';
 import UniversityDashboard from '../Pages/UniversityDashboard'
 import ChatWindowScreen from '../Pages/ChatWindowScreen';
 import Buddies from '../Pages/Buddies';
-
 import Pricing from '../Pages/Pricing';
 import ForStudents from '../Pages/ForStudents';
-
+import Events from '../Pages/Events';
 
 
 const Routers = () =>{
@@ -21,6 +20,7 @@ return (
         <Route path='/chat-window' element={<ChatWindowScreen />} />
         <Route path='/for-student' element={<ForStudents />} />
         <Route path='/pricing' element={<Pricing/>} />
+        <Route path='/events'  element={<Events/>} />  
         <Route path='/buddies'  element={<Buddies/>} />  
             
     </Routes>

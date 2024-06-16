@@ -125,7 +125,6 @@
 }
 
 .home_header_dropdown_option{
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
@@ -133,17 +132,14 @@
 }
 
 .home_header_dropdown_option p{
-    /* background-color: blue; */
     color: #fff;
     font-size: 14px;
 }
 
 .home_header_dropdown_option i{
-    /* background-color: blue; */
     color: #fff;
     font-size: 14px;
 }
-
 
 
 /* Screen size <= 768px (Mobile Phones)*/

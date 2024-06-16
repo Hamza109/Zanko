@@ -9,14 +9,22 @@
 
 /* Add ambassador section */
 .uni_buddies_add_ambas{
-    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
     margin: 50px 20px;
     border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .uni_buddies_add_ambas_main{
     display:flex;
-    gap: 100px;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+    padding: 20px 50px;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
 }
 
 .uni_buddies_add_ambas_section{
@@ -51,12 +59,12 @@
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 20px;
 }
 
 .uni_buddies_add_ambas_bttn button{
     font-size: 14px;
-    padding: 5px 30px;
+    padding: 5px 50px;
     border-radius: 10px;
     border: 1px solid #000000;
     font-weight: 500;
@@ -100,31 +108,6 @@
     padding: 10px;
 }
 
-.uni_buddies_view_ambas_section_bttn{
-    border-top: 1px solid #E6E5E5;
-    border-right: 1px solid #E6E5E5;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-}
-
-.uni_buddies_view_ambas_section_bttn button{
-    font-size: 14px;
-    padding: 2px 20px;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    font-weight: 500;
-}
-
-.uni_buddies_view_ambas_section_edit:hover{
-    background-color: #4880FF;
-    color: #fff;
-    border: none;
-}
-
-.uni_buddies_view_ambas_section_delete:hover{
-    background-color: #F93C65;
-    color: #fff;
-    border: none;
+.uni_buddies_view_ambas_section_element i:hover{
+    text-decoration: underline;
 }

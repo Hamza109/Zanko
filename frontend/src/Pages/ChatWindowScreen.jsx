@@ -39,26 +39,26 @@ useEffect(()=>{
 
     return (
         <div className="flex h-screen bg-black p-5 ">
-              <div className='logo'>
-<p className='logo-text'>Zanko</p>
-      </div>
+            <div className='logo'>
+                <p className='logo-text'>Zanko</p>
+            </div>
 
-      <Sidebar onChatBubbleClick={handleChatBubbleClick} />
+            <Sidebar onChatBubbleClick={handleChatBubbleClick} />
 
-          <div className="flex flex-col flex-grow">
-          <ChatHeader header={headerText} onUserClick={handleUserClick} />
-          {selectedUser ? (
-            <>
-          <ChatWindow  />
-          <ChatWindow2 />
-          </>
-        ) : (
-          <Inbox onUserClick={handleUserClick} />
-        )}
-          
-           
-            {/* <ChatWindow /> */}
-          </div>
+            <div className="flex flex-col flex-grow">
+            <ChatHeader header={headerText} onUserClick={handleUserClick} />
+            {selectedUser ? (
+              <>
+            <ChatWindow  />
+            {/* <ChatWindow2 /> */}
+            </>
+          ) : (
+            <Inbox onUserClick={handleUserClick} />
+          )}
+            
+            
+              {/* <ChatWindow /> */}
+            </div>
         </div>
       );
 }
