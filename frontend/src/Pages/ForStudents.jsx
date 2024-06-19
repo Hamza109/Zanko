@@ -10,7 +10,7 @@ const ForStudents = () => {
   return (
 <>
 
-<div className="home_header_container"><HomeHeader /></div>
+<div className="home_header_container "><HomeHeader /></div>
 
 <main className="home_main">
     
@@ -62,7 +62,7 @@ const ForStudents = () => {
 
 {/* Faq Section */}
 
-   <section className="py-20 bg-white">
+   <section className="py-20">
       <div className="container mx-auto text-center px-4">
         <div className='faq-header-container '>
         <h2 className="faq-header-text text-3xl lg:text-7xl  ">Confused?</h2>
