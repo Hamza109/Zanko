@@ -8,6 +8,8 @@ import Buddies from '../Pages/Buddies';
 import Pricing from '../Pages/Pricing';
 import ForStudents from '../Pages/ForStudents';
 import Events from '../Pages/Events';
+import Community from '../Pages/Community';
+
 
 
 const Routers = () =>{
@@ -21,7 +23,8 @@ return (
         <Route path='/for-student' element={<ForStudents />} />
         <Route path='/pricing' element={<Pricing/>} />
         <Route path='/events'  element={<Events/>} />  
-        <Route path='/buddies'  element={<Buddies/>} />  
+        <Route path='/buddies'  element={<Buddies/>} />
+        <Route path='/community'  element={<Community/>} />   
             
     </Routes>
 );

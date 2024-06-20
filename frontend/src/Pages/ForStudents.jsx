@@ -6,18 +6,20 @@ import ApplyButton from '../Components/StudentCard/ApplyButton'
 import ChatDemo from '../assets/forStudents/ChatDemo.png'
 import '../styles/forStudents.css'
 import chatPage from '../assets/home/chatPage.png'
+
+
 const ForStudents = () => {
   return (
 <>
 
-<div className="home_header_container "><HomeHeader /></div>
+<div className="home_header_container"><HomeHeader /></div>
 
 <main className="home_main">
     
     {/* Heading and subheading section */}
-    <div className="pb-24 flex flex-col gap-5 items-center forstudents_description">
-        <h2 className="text-center font-semibold forstudents_description_title">Received an Offer letter to study somewhere ?</h2>          
-        <ApplyButton  title={'Join Community'}/>
+    <div className="pb-24 flex flex-col gap-5 items-center home_description">
+        <h2 className="text-center font-semibold home_description_title">Received an Offer letter to study somewhere ?</h2>          
+        <div><ApplyButton  title={'Join Community'}/></div>
     </div>
 
 
@@ -48,7 +50,6 @@ const ForStudents = () => {
 
         <div className="max-w-md flex items-center justify-center ">
             <p className="text-2xl lg:text-5xl text-center font-semibold mb-10 add_task_title ">Get in touch with Community</p>
-
         </div>
     </div>
 

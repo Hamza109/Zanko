@@ -1,52 +1,3 @@
-.home_header_container{
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 30px;
-    z-index: 10;
-}
-
-.pricing_main{
-    margin-top: 150px;
-}
-
-
-/* Heading and sub heading section */
-.pricing_description_title{
-    max-width: 60%;
-    font-size: 40px;
-}
-
-.pricing_description_subtitle{
-    max-width: 40%;
-    font-size: 24px;
-}
-
-.pricing_description_bttn{
-    background: linear-gradient(
-        to right,
-        #44BCFF 0%, 
-        #44B0FF 23%, 
-        #FF44EC 49%, 
-        #FF44EC 74%, 
-        #FF675E 100%
-    );
-    padding: 1px;
-    border-radius: 10px;
-}
-
-.pricing_description_bttn button{
-    background-color: #000000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-
-
 /* Pricing section styles */
 .pricing_plans_section{
     gap: 10px;
@@ -271,16 +222,6 @@
 
 /* Screen size <= 768px (Mobile Phones)*/
 @media (max-width: 768px) {
-    .pricing_description_title{
-        max-width: 90%;
-        font-size: 28px;
-    }
-    
-    .pricing_description_subtitle{
-        max-width: 90%;
-        font-size: 16px;
-    }
-
     .pricing_plans_title{
         font-size: 28px;
         max-width: 90%;
@@ -349,25 +290,11 @@
         border-radius: 0px 14px 14px 0px;
     }
     
-    
-    
-    
-    
 }
 
 
 /* Screen size > 768px and <=1200px (tablets/small-laptops)*/
 @media (min-width: 769px) and (max-width: 1200px) {   
-    .pricing_description_title{
-        max-width: 70%;
-        font-size: 30px;
-    }
-    
-    .pricing_description_subtitle{
-        max-width: 50%;
-        font-size: 18px;
-    }
-
     .pricing_newsletter_section_top{
         transform: translateX(-100px);
     }
