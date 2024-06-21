@@ -8,6 +8,7 @@ import Buddies from '../Pages/Buddies';
 import Pricing from '../Pages/Pricing';
 import ForStudents from '../Pages/ForStudents';
 import Events from '../Pages/Events';
+import ChatLanding from '../Pages/ChatLanding';
 
 
 const Routers = () =>{
@@ -22,6 +23,7 @@ return (
         <Route path='/pricing' element={<Pricing/>} />
         <Route path='/events'  element={<Events/>} />  
         <Route path='/buddies'  element={<Buddies/>} />  
+        <Route path='/chat-home'  element={<ChatLanding/>} />  
             
     </Routes>
 );
