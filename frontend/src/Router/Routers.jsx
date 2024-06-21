@@ -9,6 +9,7 @@ import Pricing from '../Pages/Pricing';
 import ForStudents from '../Pages/ForStudents';
 import Events from '../Pages/Events';
 import Community from '../Pages/Community';
+import Guides from '../Pages/Guides';
 
 
 
@@ -25,6 +26,7 @@ return (
         <Route path='/events'  element={<Events/>} />  
         <Route path='/buddies'  element={<Buddies/>} />
         <Route path='/community'  element={<Community/>} />   
+        <Route path='/guides'  element={<Guides/>} />   
             
     </Routes>
 );
