@@ -10,6 +10,7 @@ import ForStudents from '../Pages/ForStudents';
 import Events from '../Pages/Events';
 import Community from '../Pages/Community';
 import Guides from '../Pages/Guides';
+import WebinarsAndEvents from '../Pages/WebinarsAndEvents';
 
 
 
@@ -27,7 +28,7 @@ return (
         <Route path='/buddies'  element={<Buddies/>} />
         <Route path='/community'  element={<Community/>} />   
         <Route path='/guides'  element={<Guides/>} />   
-            
+        <Route path='/webinars'  element={<WebinarsAndEvents/>} />      
     </Routes>
 );
 };
