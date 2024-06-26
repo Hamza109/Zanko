@@ -118,7 +118,27 @@
     .webinars_events_list_search input{
        font-size: 14px;
     }
-    .guide_list_main_card_text p{
+    .webinars_events_list_main_card_text p{
         font-size: 14px;
-     }
+    }
+    .webinars_events_list_main_card:nth-child(4n-3), .webinars_events_list_main_card:nth-child(4n) {
+        width: calc(200px * 2 + 10px);
+    }
+    
+    .webinars_events_list_main_card:nth-child(4n-2), .webinars_events_list_main_card:nth-child(4n-1) {
+        width: 200px;
+    }
+}
+
+
+
+/* Screen size > 768px and <=1200px (tablets/small-laptops)*/
+@media (min-width: 769px) and (max-width: 1200px) {
+    .webinars_events_list_main_card:nth-child(4n-3), .webinars_events_list_main_card:nth-child(4n) {
+        width: calc(300px * 2 + 10px);
+    }
+    
+    .webinars_events_list_main_card:nth-child(4n-2), .webinars_events_list_main_card:nth-child(4n-1) {
+        width: 300px;
+    }
 }

@@ -1,0 +1,86 @@
+/* Buttons Section Styles */
+.uni_events_bttns button{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px 14px;
+}
+
+.uni_events_all_bttn_active,.uni_events_add_bttn_active{
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 5px 0px;
+}
+
+
+/* Add Events Section STEP 1*/
+.uni_events_add{
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 0px 2px 5px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uni_events_add_title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.uni_events_add_step{
+   color: #BDBDBD;
+   font-size: 12px;
+
+}
+
+.uni_events_add_main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uni_events_add_section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni_events_add_section label{
+    display: flex;
+    width: 120px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.uni_events_add_section input{
+    font-size: 14px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    width: 300px;
+    background-color: #F7F7F7;
+}
+
+.uni_events_add_section input:focus{
+    outline: none;
+}
+
+.uni_events_add_section_bttn button{
+    background-color: #4880FF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+
+/* Success Message */
+.uni_events_add_success_tick{
+    background-color: #59d603;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+

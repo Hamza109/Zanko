@@ -5,8 +5,10 @@
     margin-left: 5px;
     padding-left: 60px;
     padding-right: 30px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 220px;
     background-color: #fff;
     z-index: 1000;
 }

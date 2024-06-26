@@ -21,7 +21,7 @@ const Guides=()=>{
     
     return(
         <div>
-            <div className="home_header_container"><HomeHeader /></div>
+            <HomeHeader />
 
             <main className="home_main">
 
@@ -42,39 +42,39 @@ const Guides=()=>{
                     </div>
                     <div className="guides_list_main">
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides1} />
+                            <div className="w-full"><img src={guides1} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides2} />
+                            <div className="w-full"><img src={guides2} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides3} />
+                            <div className="w-full"><img src={guides3} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides4} />
+                            <div className="w-full"><img src={guides4} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides5} />
+                            <div className="w-full"><img src={guides5} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides6} />
+                            <div className="w-full"><img src={guides6} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides7} />
+                            <div className="w-full"><img src={guides7} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides8} />
+                            <div className="w-full"><img src={guides8} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                         <a href="#" className="guide_list_main_card">
-                            <img src={guides9} />
+                            <div className="w-full"><img src={guides9} /></div>
                             <div className="guide_list_main_card_text"><p>Confidence Counts: Supporting students to journey beyond their...</p></div>
                         </a>
                     </div>

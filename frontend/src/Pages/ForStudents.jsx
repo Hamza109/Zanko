@@ -12,7 +12,7 @@ const ForStudents = () => {
   return (
 <>
 
-<div className="home_header_container"><HomeHeader /></div>
+<HomeHeader />
 
 <main className="home_main">
     

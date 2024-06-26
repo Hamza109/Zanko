@@ -1,17 +1,19 @@
 import React from 'react';
-import '../styles/uni-dashboard.css'
-import UniSidebar from "../Components/UniDashboard/UniSidebar/UniSidebar.jsx"
-import UniDashboardHeader from "../Components/UniDashboard/UniDashboardHeader/UniDashboardHeader.jsx"
-import uni_dashboard_header_bell from '../assets/uni-dashboard/uni_dashboard_header_bell.png'
+import '../../styles/uni-dashboard.css'
+import UniSidebar from "../../Components/UniDashboard/UniSidebar/UniSidebar.jsx"
+import UniDashboardHeader from "../../Components/UniDashboard/UniDashboardHeader/UniDashboardHeader.jsx"
+import uni_dashboard_header_bell from '../../assets/uni-dashboard/uni_dashboard_header_bell.png'
+
 
 const UniversityDashboard = () => {
     return(
         <div className="uni_dashboard_container">
             <UniSidebar />
-            <div className="uni_dash_main_content">
-                <UniDashboardHeader />
-                
-                {/* Stat Cards Section */}
+        
+            <UniDashboardHeader />
+            
+            {/* Stat Cards Section */}
+            <div className="uni_dash_main">
                 <div className="flex gap-5 uni_dash_stat_cards">
 
                     <div className="flex flex-col items-center uni_dash_stat_card_">

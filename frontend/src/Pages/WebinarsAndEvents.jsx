@@ -18,7 +18,7 @@ const WebinarsAndEvents=()=>{
     
     return(
         <div>
-            <div className="home_header_container"><HomeHeader /></div>
+            <HomeHeader />
 
             <main className="home_main">
 
@@ -39,42 +39,42 @@ const WebinarsAndEvents=()=>{
                     </div>
                     <div className="webinars_events_list_main">
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar1} />
+                            <div className="webinar_card_container"><img src={webinar1} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar2} />
+                            <div className="webinar_card_container"><img src={webinar2} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar3} />
+                            <div className="webinar_card_container"><img src={webinar3} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar4} />
+                            <div className="webinar_card_container"><img src={webinar4} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar5} />
+                            <div className="webinar_card_container"><img src={webinar5} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div className="webinars_events_list_main_card">
-                            <img src={webinar6} />
+                            <div className="webinar_card_container"><img src={webinar6} /></div>
                             <div className="webinars_events_list_main_card_text">
                                 <p>Confidence Counts: Supporting students to journey beyond their...</p>
                                 <a href="#" className="flex items-center py-3 gap-1 text-xs font-semibold"><p>Watch Video</p><i class="ri-arrow-right-line"></i></a>

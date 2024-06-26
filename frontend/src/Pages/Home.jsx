@@ -3,16 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import HomeHeader from "../Components/home/HomeHeader/HomeHeader.jsx"
 import HomeFooter from "../Components/home/HomeFooter/HomeFooter.jsx"
+import ScrollSection from '../Components/home/ScrollSection/ScrollSection.jsx';
 import customer_rev1 from "../assets/home/customer_rev1.mp4"
 import customer_rev2 from "../assets/home/customer_rev2.mp4"
 import customer_rev3 from "../assets/home/customer_rev3.mp4"
 import features_vid from "../assets/home/features_vid.mp4"
-import unilogo1 from "../assets/home/unilogo1.png"
-import unilogo2 from "../assets/home/unilogo2.png"
-import unilogo3 from "../assets/home/unilogo3.png"
-import unilogo4 from "../assets/home/unilogo4.png"
-import unilogo5 from "../assets/home/unilogo5.png"
-import unilogo6 from "../assets/home/unilogo6.png"
 import Assurance from '../Components/home/AssuranceSection/Assurance.jsx';
 import chatPage from '../assets/home/chatPage.png'
 
@@ -57,13 +52,8 @@ return (
 
     <>
 
-    <div className="home_header_container"><HomeHeader /></div>
-
-
-
-
-
-
+    
+    <HomeHeader />
     <main className="home_main">
         
         {/* Heading and subheading section */}
@@ -76,26 +66,7 @@ return (
 
 
         {/* University logos scroll section */}
-        <div className="home_uni_logos">
-            <div className="home_uni_logo_slider">
-                <img src={unilogo1}/>
-                <img src={unilogo2}/>
-                <img src={unilogo3}/>
-                <img src={unilogo4}/>
-                <img src={unilogo5}/>
-                <img src={unilogo6}/>
-            </div>
-
-            <div className="home_uni_logo_slider">
-                <img src={unilogo1}/>
-                <img src={unilogo2}/>
-                <img src={unilogo3}/>
-                <img src={unilogo4}/>
-                <img src={unilogo5}/>
-                <img src={unilogo6}/>
-            </div>         
-                                         
-        </div>
+        <ScrollSection/>
 
 
 

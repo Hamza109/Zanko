@@ -7,7 +7,7 @@
 }
 
 .home_main{
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 /* Heading and subheading section */
@@ -41,36 +41,6 @@
     font-weight: 500;
     padding: 10px;
     border-radius: 10px;
-}
-
-
-/* University logos scroll section */
-.home_uni_logos{
-    margin-bottom: 100px;
-    overflow: hidden;
-    padding: 20px 0px;
-    display: grid;
-    grid-template-columns: 100% 100%;
-}
-.home_uni_logo_slider{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 60px;
-    animation: 20s slide infinite linear;
-}
-
-.home_uni_logos img{
-    height: 40px;
-    margin: 0px 10px;
-}
-
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
 }
 
 
