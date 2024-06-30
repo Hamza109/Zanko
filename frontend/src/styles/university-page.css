@@ -1,0 +1,64 @@
+.uni_events_add_checkbox_section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni_events_add_checkbox_section_main{
+    display: flex;
+    width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.uni_events_add_checkbox_section input{
+    accent-color: #4880FF;
+}
+
+.uni_events_multidropdown_add_section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni_events_multidropdown_add_section label{
+    display: flex;
+    width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* University List Section */
+.uni_page_list_section{
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+}
+
+.uni_page_list_title_section{
+    padding: 20px 0px;
+}
+
+.uni_page_list_section_head{
+    background-color: #F1F4F9;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.uni_page_list_section_main{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    border-bottom: 1px solid #F5F6FA;
+    text-align: center;
+}
+

@@ -32,7 +32,7 @@ const UndergradAdmissions=()=>{
 
                 
                 {/* Event section */}
-                <div className="ug_adm_event">
+                <div className="flex flex-wrap justify-center ug_adm_event">
                     <div className="ug_adm_event_img"><img src={event_ss} /></div>
                     <div className="ug_adm_event_main">
                         <p className="ug_adm_event_title">Inspire prospective students and create FOMO</p>
