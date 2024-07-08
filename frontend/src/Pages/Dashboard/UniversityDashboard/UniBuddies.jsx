@@ -44,10 +44,9 @@ const UniBuddies =()=>{
 
     //Handle submit 
     const handleSubmit = () => {
-        setAddAmbassador(2);
-
         //Call the API here
 
+        setAddAmbassador(2);
         //done message (5sec)
         setTimeout(() => {
             window.location.reload();
