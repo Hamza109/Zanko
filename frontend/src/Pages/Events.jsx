@@ -39,13 +39,13 @@ const Events=()=>{
         <div>
             <div className="home_header_container"><HomeHeader /></div>
 
-            <main className="events_main">
+            <main className="home_main">
 
                 {/* Heading and subheading section */}
-                <div className="pb-24 flex flex-col gap-5 items-center events_description">
-                    <h2 className="text-center font-semibold events_description_title">Make Students explore more options for their career as well as for their Personal Growth</h2>
-                    <h3 className="font-normal text-center events_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
-                    <div className="events_description_bttn" ><button>Book Demo</button></div>
+                <div className="pb-24 flex flex-col gap-5 items-center home_description">
+                    <h2 className="text-center font-semibold home_description_title">Make Students explore more options for their career as well as for their Personal Growth</h2>
+                    <h3 className="font-normal text-center home_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
+                    <div className="home_description_bttn" ><button>Book Demo</button></div>
                 </div>
 
 

@@ -1,18 +1,9 @@
-.forstudents_description_title{
-  max-width: 60%;
-  font-size: 40px;
-}
-
-
 /* General styles for the home header and main sections */
 .home_header_container,
 .home_main {
 
   overflow-x: hidden;
 }
-
-
-
 
 
 .feature-text-left{

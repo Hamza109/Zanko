@@ -6,6 +6,8 @@ import ApplyButton from '../Components/StudentCard/ApplyButton'
 import ChatDemo from '../assets/forStudents/ChatDemo.png'
 import '../styles/forStudents.css'
 import chatPage from '../assets/home/chatPage.png'
+
+
 const ForStudents = () => {
   return (
 <>
@@ -15,12 +17,9 @@ const ForStudents = () => {
 <main className="home_main">
     
     {/* Heading and subheading section */}
-    <div className="pb-24 flex flex-col gap-5 items-center forstudents_description">
-        <h2 className="text-center font-semibold forstudents_description_title">Received an Offer letter to study somewhere ?</h2>          
-    
-        <div className='apply'>
-      <ApplyButton  title={'Join Community'}/>
-        </div>
+    <div className="pb-24 flex flex-col gap-5 items-center home_description">
+        <h2 className="text-center font-semibold home_description_title">Received an Offer letter to study somewhere ?</h2>          
+        <div><ApplyButton  title={'Join Community'}/></div>
     </div>
 
 
@@ -45,15 +44,12 @@ const ForStudents = () => {
 
 
     {/* Never miss any task */}
-    <div className="flex flex-col flex-col-reverse lg:flex-row justify-center py-24 px-4 gap-10 add_task">
-    <div className="home_add_task">
-    <img  style={{width: 500}} src={chatPage} />
-    </div>
-       
+    <div className="flex flex-col flex-col-reverse lg:flex-row justify-center py-24 px-4 gap-24 add_task">
+    
+        <img style={{width: '500px'}} src={chatPage} />
 
         <div className="max-w-md flex items-center justify-center ">
-            <p className="text-3xl lg:text-5xl text-center font-semibold mb-10 add_task_title ">Get in touch with Community</p>
-
+            <p className="text-2xl lg:text-5xl text-center font-semibold mb-10 add_task_title ">Get in touch with Community</p>
         </div>
     </div>
 
@@ -67,7 +63,7 @@ const ForStudents = () => {
 
 {/* Faq Section */}
 
-   <section className="py-20 bg-white">
+   <section className="py-20">
       <div className="container mx-auto text-center px-4">
         <div className='faq-header-container '>
         <h2 className="faq-header-text text-3xl lg:text-7xl  ">Confused?</h2>

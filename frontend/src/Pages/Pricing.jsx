@@ -12,13 +12,13 @@ const Pricing = ()=>{
     <div>
         <div className="home_header_container"><HomeHeader /></div>
 
-        <main className="pricing_main">
+        <main className="home_main">
 
             {/* Heading and subheading section */}
             <div className="pb-24 flex flex-col gap-5 items-center home_description">
-                <h2 className="text-center font-semibold pricing_description_title">faucibus pulvinar elementum integer enim neque volutpat</h2>          
-                <h3 className="font-normal text-center pricing_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
-                <div className="pricing_description_bttn" ><button>Book Demo</button></div>
+                <h2 className="text-center font-semibold home_description_title">faucibus pulvinar elementum integer enim neque volutpat</h2>          
+                <h3 className="font-normal text-center home_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
+                <div className="home_description_bttn" ><button>Book Demo</button></div>
             </div>
 
 

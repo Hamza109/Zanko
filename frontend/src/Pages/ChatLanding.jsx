@@ -7,7 +7,26 @@ import Dashboard from '../assets/chatScreen/Dashboard.png'
 import '../styles/forStudents.css'
 import chatPage from '../assets/home/chatPage.png'
 import CardSlider from '../assets/chatScreen/CardSlider.png'
+import '../styles/community.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import analytics_img from '../assets/community/analytics_img.png'
+import user_img from '../assets/community/user_img.png'
+import earth from '../assets/community/Earth.png'
+
+
 const ChatLanding = () => {
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+    
+
   return (
 <>
 
@@ -17,7 +36,7 @@ const ChatLanding = () => {
     
     {/* Heading and subheading section */}
     <div className="pb-24 flex flex-col gap-5 items-center forstudents_description">
-        <h2 className="text-center font-semibold forstudents_description_title">Received an Offer letter to study somewhere ?</h2>          
+        <h2 className="text-center font-semibold text-2xl lg:text-5xl forstudents_description_title">Received an Offer letter to study somewhere ?</h2>          
     
         <div className='apply'>
       <ApplyButton  title={'Book Demo'}/>
@@ -91,6 +110,9 @@ const ChatLanding = () => {
     </section>
 
 
+     
+
+
 {/* Search University Section*/}
 
     <section className=" flex flex-col  justify-center search-section-container text-center">
@@ -100,6 +122,61 @@ const ChatLanding = () => {
         <button className="bg-black text-white  px-2 py-1 lg:px-4 lg:py-2 rounded-full">Search</button>
       </div>
     </section>
+
+
+      {/* Community reviews section   */}
+      <div className="community_reviews">
+                    <Slider {...settings}>
+                        
+                        <div className="flex p-5 justify-center items-center h-full">
+                            <div className="community_reviews_section">
+                                <div className="flex  justify-center items-center ">
+                                <img  src={user_img} width={100} alt="User" />
+                                </div>
+                       
+                                <div className="community_reviews_section_main">
+                                   
+                                    <p>
+                                        Nunc urna commodo nisl justo vel blandit ultrices. Sollicitudin imperdiet in risus non. Egestas facilisis fermentum elementum fringilla.
+                                        Arcu gravida nec nisl turpis id. Vestibulum justo sit malesuada ac. Neque cras proin id amet iaculis sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div className="flex p-5 justify-center items-center h-full">
+                            <div className="community_reviews_section">
+                                <div className="flex  justify-center items-center ">
+                                <img  src={user_img} width={100} alt="User" />
+                                </div>
+                       
+                                <div className="community_reviews_section_main">
+                                   
+                                    <p>
+                                        Nunc urna commodo nisl justo vel blandit ultrices. Sollicitudin imperdiet in risus non. Egestas facilisis fermentum elementum fringilla.
+                                        Arcu gravida nec nisl turpis id. Vestibulum justo sit malesuada ac. Neque cras proin id amet iaculis sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div className="flex p-5 justify-center items-center h-full">
+                            <div className="community_reviews_section">
+                                <div className="flex  justify-center items-center ">
+                                <img  src={user_img} width={100} alt="User" />
+                                </div>
+                       
+                                <div className="community_reviews_section_main">
+                                   
+                                    <p>
+                                        Nunc urna commodo nisl justo vel blandit ultrices. Sollicitudin imperdiet in risus non. Egestas facilisis fermentum elementum fringilla.
+                                        Arcu gravida nec nisl turpis id. Vestibulum justo sit malesuada ac. Neque cras proin id amet iaculis sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </Slider>
+                </div>
   
 
 

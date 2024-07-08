@@ -9,6 +9,11 @@ import Pricing from '../Pages/Pricing';
 import ForStudents from '../Pages/ForStudents';
 import Events from '../Pages/Events';
 import ChatLanding from '../Pages/ChatLanding';
+import Community from '../Pages/Community';
+import Guides from '../Pages/Guides';
+import Blogs from '../Pages/Blogs';
+import Stories from '../Pages/Stories';
+
 
 
 const Routers = () =>{
@@ -24,7 +29,11 @@ return (
         <Route path='/events'  element={<Events/>} />  
         <Route path='/buddies'  element={<Buddies/>} />  
         <Route path='/chat-home'  element={<ChatLanding/>} />  
-            
+        <Route path='/buddies'  element={<Buddies/>} />
+        <Route path='/community'  element={<Community/>} />   
+        <Route path='/guides'  element={<Guides/>} />   
+        <Route path='/blogs'  element={<Blogs/>} />   
+        <Route path='/customer-stories'  element={<Stories/>} />   
     </Routes>
 );
 };

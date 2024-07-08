@@ -1,0 +1,158 @@
+.guides_intro{
+    background-color: #000000;
+    padding: 30px 20px 70px 20px;
+}
+
+.guides_intro_title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 40px;
+}
+
+.guides_intro_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.guides_intro_main p{
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.guides_intro_main img{
+    width: 500px;
+}
+
+
+
+/* Guides List Section */
+.guides_list{
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.guides_list_search{
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 0px 10px;
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.guides_list_search i{
+    font-size: 20px;
+}
+
+.guides_list_search input{
+   height: 100%;
+   padding: 5px;
+   flex-grow: 1;
+}
+
+.guides_list_search input:focus{
+    outline: none;
+}
+
+.guides_list_main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.guide_list_main_card{
+    width: 400px;
+}
+
+.guide_list_main_card img{
+    margin-bottom: 20px;
+}
+
+.guide_list_main_card_text{
+    padding: 5px;
+}
+
+.guide_list_main_card_text p{
+   font-size: 16px;
+}
+
+.guides_list_main_bttn button{
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.guides_list_main_bttn button::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    z-index: -1;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+/* Screen size <= 768px (Mobile Phones)*/
+@media (max-width: 768px) {
+    .guides_intro_title{
+        font-size: 28px;
+    }
+    .guides_intro_main p{
+        font-size: 18px;
+    }
+    .guides_list{
+        padding: 70px 20px;
+    }
+    .guides_list_search{
+       width: 250px;
+    }
+    .guides_list_search i{
+        font-size: 16px;
+    }
+    .guides_list_search input{
+       font-size: 14px;
+    }
+    .guide_list_main_card_text p{
+        font-size: 14px;
+     }
+}
+
