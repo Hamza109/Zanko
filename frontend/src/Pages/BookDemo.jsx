@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/book-demo.css';
-import { Form, FormGroup, Button } from 'reactstrap';
+
 import user from '../assets/book-demo/user.png';
 
 const BookDemo = () => {

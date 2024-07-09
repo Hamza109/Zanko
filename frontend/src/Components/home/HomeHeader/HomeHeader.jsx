@@ -12,6 +12,8 @@ import chat_logo from '../../../assets/home-header/chat_logo.png'
 import webinars_logo from '../../../assets/home-header/webinars_logo.png'
 import guides_logo from '../../../assets/home-header/guides_logo.png'
 import customerstories_logo from '../../../assets/home-header/customerstories_logo.png'
+import * as Components from './Components';
+import ApplyButton from "../../StudentCard/ApplyButton";
 
 
 
@@ -20,6 +22,7 @@ const HomeHeader = () => {
 
   // for handling hamburger dropdowns
   const [dropdown, setDropdown] = useState(false);
+  const [signIn, toggle] = React.useState(true);
 
   //0->none 1->Platform 2->Resources 3->solutions
   const [hamburgDropdown,setHamburgDropdown] = useState(0);
@@ -61,47 +64,50 @@ const HomeHeader = () => {
             className="modal"
             overlayClassName="overlay"
           >
-            <div
-              className={`modal-content flex `}
-            >
-              <div
-                className={`modal-left w-1/2 p-8 text-white flex flex-col justify-evenly ${
-                  isLogin ? "show" : "hide"
-                } `}
-              >
-                <div className="text-content text-left">
-                  <h1 className="text-6xl font-bold text-gradient mb-4">Zanko</h1>
-                </div>
-                <div className="text-content text-left">
-                  <p className="text-2xl  leading-relaxed">
-                    Our platform is always here for you. Access information and
-                    assistance seamlessly, anytime, anywhere at Zanko.
-                  </p>
-                </div>
-              </div>
-              <div
-                className={`modal-right w-1/2 p-8 text-white flex flex-col  justify-evenly  ${
-                  isLogin ? "hide" : "show"
-                }`}
-              >
-                <div className="text-content text-left">
-                  <h1 className="text-6xl font-bold text-gradient mb-4">Zanko</h1>
-                </div>
-                <div className="text-content text-left">
-                  <p className="text-2xl leading-relaxed">
-                    Our platform is always here for you. Access information and
-                    assistance seamlessly, anytime, anywhere at Zanko.
-                  </p>
-                </div>
-              </div>
-              <div className="form-container w-1/2 flex items-center justify-center">
-                {isLogin ? (
-                  <Login toggleForm={toggleForm} />
-                ) : (
-                  <SignUp toggleForm={toggleForm} />
-                )}
-              </div>
-            </div>
+  <Components.Container>
+              <Components.SignUpContainer signinIn={signIn}>
+                  <Components.Form>
+                      <Components.Title>Sign Up</Components.Title>
+                      <Components.Input type='text' placeholder='Name' />
+                      <Components.Input type='email' placeholder='Email' />
+                      <Components.Input type='password' placeholder='Password' />
+                      <ApplyButton title={'Sign Up'} />
+                  </Components.Form>
+              </Components.SignUpContainer>
+
+              <Components.SignInContainer signinIn={signIn}>
+                   <Components.Form>
+                       <Components.Title>Sign in</Components.Title>
+                       <Components.Input type='email' placeholder='Email' />
+                       <Components.Input type='password' placeholder='Password' />
+                       <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
+                       <ApplyButton title={'Sign In'} />
+                   </Components.Form>
+              </Components.SignInContainer>
+
+              <Components.OverlayContainer signinIn={signIn}>
+                  <Components.Overlay signinIn={signIn}>
+
+                  <Components.LeftOverlayPanel signinIn={signIn}>
+                  <Components.Title className="text-gradient">Zanko</Components.Title>
+                      <Components.Paragraph>
+                      Our platform is always here for you. Access information and assistance seamlessly, anytime, anywhere at Zanko.
+                      </Components.Paragraph>
+                   <ApplyButton title={'Sign In'} onClick={()=>toggle(true)} />
+                      </Components.LeftOverlayPanel>
+
+                      <Components.RightOverlayPanel signinIn={signIn}>
+                        <Components.Title className="text-gradient">Zanko</Components.Title>
+                        <Components.Paragraph>
+                        Our platform is always here for you. Access information and assistance seamlessly, anytime, anywhere at Zanko.
+                        </Components.Paragraph>
+                           <ApplyButton title={'Sign Up'} onClick={()=>toggle(false)} />
+                      </Components.RightOverlayPanel>
+  
+                  </Components.Overlay>
+              </Components.OverlayContainer>
+
+          </Components.Container>
           </Modal>
 
           {/* Right Section of Home Header */}

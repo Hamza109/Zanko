@@ -1,5 +1,5 @@
 import React from 'react';
-import './Authentication.css'
+
 import ApplyButton from '../StudentCard/ApplyButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Google from '../../assets/Authentication/Google.png'
