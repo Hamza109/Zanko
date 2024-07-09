@@ -14,6 +14,9 @@ import guides_logo from '../../../assets/home-header/guides_logo.png'
 import customerstories_logo from '../../../assets/home-header/customerstories_logo.png'
 import * as Components from './Components';
 import ApplyButton from "../../StudentCard/ApplyButton";
+import Google from '../../../assets/Authentication/Google.png'
+import Facebook from '../../../assets/Authentication/Facebook.png'
+import Apple from '../../../assets/Authentication/Apple.png'
 
 
 
@@ -68,10 +71,29 @@ const HomeHeader = () => {
               <Components.SignUpContainer signinIn={signIn}>
                   <Components.Form>
                       <Components.Title>Sign Up</Components.Title>
-                      <Components.Input type='text' placeholder='Name' />
-                      <Components.Input type='email' placeholder='Email' />
-                      <Components.Input type='password' placeholder='Password' />
+                   
+                      <Components.Input type='text' placeholder='username' />
+          
+                      <Components.Input type='email' placeholder='email' />
+                      <Components.Input type='password' placeholder='password' />
+                      <Components.Input type='password' placeholder='confirm password' />
                       <ApplyButton title={'Sign Up'} />
+                      <div className="flex items-center my-3 px-2">
+    <hr className="flex-grow border-t border-gray" />
+    <span className="mx-2  text-xs ">or Login with</span>
+    <hr className="flex-grow border-t border-gray" />
+  </div>
+  <div className="social-login flex justify-center space-x-4 my-4">
+    <button className="social-btn">
+  <img src={Google} width={20} height={20} />
+    </button>
+    <button className="social-btn">
+    <img src={Facebook} width={20} height={20} />
+    </button>
+    <button className="social-btn">
+    <img src={Apple} width={20} height={20} />
+    </button>
+  </div>
                   </Components.Form>
               </Components.SignUpContainer>
 
@@ -82,6 +104,24 @@ const HomeHeader = () => {
                        <Components.Input type='password' placeholder='Password' />
                        <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
                        <ApplyButton title={'Sign In'} />
+                       <div className="flex items-center my-3 px-2">
+          <hr className="flex-grow border-t border-gray" />
+          <span className="mx-2  text-xs ">or Login with</span>
+          <hr className="flex-grow border-t border-gray" />
+        </div>
+        <div className="social-login flex justify-center space-x-4 my-4">
+          <button className="social-btn">
+        <img src={Google} width={20} height={20} />
+          </button>
+          <button className="social-btn">
+          <img src={Facebook} width={20} height={20} />
+          </button>
+          <button className="social-btn">
+          <img src={Apple} width={20} height={20} />
+          </button>
+        </div>
+    
+    
                    </Components.Form>
               </Components.SignInContainer>
 
@@ -102,6 +142,7 @@ const HomeHeader = () => {
                         Our platform is always here for you. Access information and assistance seamlessly, anytime, anywhere at Zanko.
                         </Components.Paragraph>
                            <ApplyButton title={'Sign Up'} onClick={()=>toggle(false)} />
+                           
                       </Components.RightOverlayPanel>
   
                   </Components.Overlay>
