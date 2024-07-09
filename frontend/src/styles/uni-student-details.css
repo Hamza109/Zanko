@@ -1,0 +1,82 @@
+.uni_student_details_title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.uni_student_details_title span{
+    font-size: 26px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0px 10px;
+}
+
+
+/* Documents Section styles */
+.uni_student_documents_title{
+    padding: 20px 0px;
+}
+
+.uni_student_documents_title_img{
+    height: 30px;
+    width: 30px;
+}
+
+.uni_student_documents_title_img img{
+    height: 30px;
+    width: 30px;
+}
+
+.uni_student_documents_title p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.uni_student_documents_main{
+    padding: 40px 0px;
+    border-bottom: 2px solid #F5F6FA;
+}
+
+.uni_student_documents_element_title{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.uni_student_documents_element_main{
+    font-size: 14px;
+}
+
+.uni_student_documents_element_img{
+    height: 30px;
+}
+
+.uni_student_documents_element_img img{
+    height: 30px;
+}
+
+
+/* Change Status Section */
+.uni_student_status{
+    padding: 20px 0px;
+}
+
+.uni_student_status select{
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.25);
+    color: #667085;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.uni_student_status select:focus{
+    outline: none;
+}
+
+.uni_student_status_save button{
+    background-color: #5887FF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

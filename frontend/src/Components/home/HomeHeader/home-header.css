@@ -1,3 +1,14 @@
+.home_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 100;
+    padding: 30px 0px;
+}
 .home_header_border{
     width: 90%;
     background: linear-gradient(
@@ -11,6 +22,8 @@
     border-radius: 20px;
     padding: 1px;
     position: relative;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 30px 5px;
+
 }
 
 .home_header_main{
@@ -19,9 +32,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(0,0,0,0.2) 0px 0px 30px 5px;
-    z-index: 100;
     border-radius: 20px;
+    position: relative;
 }
 
 .home_header_right{
@@ -31,10 +43,122 @@
     gap: 10px;
 }
 
+
+/* Header options styles */
 .home_header_options{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home_header_drop_option{
+    display: flex;
+    flex-direction: column;
+}
+
+.home_header_drop_option_main{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.home_header_drop_option_main p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.home_header_drop_option_main p:hover{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home_header_option_dropdown_container{
+    padding: 40px 0px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+}
+
+.home_header_option_dropdown_border{
+  padding: 2px;
+  background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    border-radius: 10px;
+}
+
+.home_header_option_dropdown{
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap:20px;
+    padding: 20px;
+    position: relative;
+}
+
+.home_header_drop_option:hover .home_header_option_dropdown_container,
+.home_header_option_dropdown_container:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.home_header_option_dropdown_element{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: auto;
+    width: 400px;
+    cursor: pointer;
+}
+
+.home_header_option_dropdown_element:hover{
+    opacity: 0.8;
+}
+
+.home_header_option_dropdown_click{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.home_header_option_dropdown_element:hover .home_header_option_dropdown_click,.home_header_option_dropdown_element.active .home_header_option_dropdown_click{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.home_header_option_dropdown_element_text{
+    font-size: 14px;
+    color: #fff;
 }
 
 .home_header_option{
@@ -43,7 +167,6 @@
 }
 
 .home_header_option p{
-    margin: 0;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
@@ -63,6 +186,7 @@
     background-clip: text;
 }
 
+/* Signup button styles */
 .home_header_signup_border{
     background: linear-gradient(
         to right,
@@ -87,6 +211,8 @@
     font-weight: 500;
 }
 
+
+/* Hamburger menu for mobile display */
 .home_header_hammenu_border{
     display: none;
     background: linear-gradient(
@@ -138,7 +264,35 @@
 
 .home_header_dropdown_option i{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.home_header_dropdown_sub_option{
+    padding: 5px 0px;
+}
+
+.home_header_dropdown_sub_option p{
+    color: #fff;
+    font-size: 12px;
+}
+
+.home_header_dropdown_sub_option i{
+    color: #fff;
+    font-size: 16px;
+}
+
+.home_header_dropdown_option.active  p ,.home_header_dropdown_sub_option.active p{
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 
@@ -160,9 +314,10 @@
 
 /* Screen size >768px (Tablets and Small Laptops)*/
 @media (min-width: 769px) and (max-width: 1200px){
-    .home_header_option p{
-    font-size: 14px;
+    .home_header_option_dropdown_element{
+        width: 300px;
     }
+
     .home_header_signup_border button{
         padding: 10px 14px;
         font-size: 14px;

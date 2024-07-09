@@ -1,0 +1,144 @@
+/* Guides List Section */
+.webinars_events_list{
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.webinars_events_list_search{
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 0px 10px;
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.webinars_events_list_search i{
+    font-size: 20px;
+}
+
+.webinars_events_list_search input{
+   height: 100%;
+   padding: 5px;
+   flex-grow: 1;
+}
+
+.webinars_events_list_search input:focus{
+    outline: none;
+}
+
+.webinars_events_list_main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.webinars_events_list_main_card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.webinars_events_list_main_card:hover{
+    transform: translateY(-10px); 
+}
+
+.webinars_events_list_main_card:nth-child(4n-3), .webinars_events_list_main_card:nth-child(4n) {
+    width: calc(400px * 2 + 10px);
+}
+
+.webinars_events_list_main_card:nth-child(4n-2), .webinars_events_list_main_card:nth-child(4n-1) {
+    width: 400px;
+}
+
+.webinars_events_list_main_card img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.webinars_events_list_main_card_text{
+    padding: 5px;
+}
+
+.webinars_events_list_main_card_text p{
+   font-size: 16px;
+}
+
+.webinars_events_list_main_bttn button{
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.webinars_events_list_main_bttn button::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    z-index: -1;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Screen size <= 768px (Mobile Phones)*/
+@media (max-width: 768px) {
+    .webinars_events_list{
+        padding: 70px 20px;
+    }
+    .webinars_events_list_search{
+       width: 250px;
+    }
+    .webinars_events_list_search i{
+        font-size: 16px;
+    }
+    .webinars_events_list_search input{
+       font-size: 14px;
+    }
+    .webinars_events_list_main_card_text p{
+        font-size: 14px;
+    }
+    .webinars_events_list_main_card:nth-child(4n-3), .webinars_events_list_main_card:nth-child(4n) {
+        width: calc(200px * 2 + 10px);
+    }
+    
+    .webinars_events_list_main_card:nth-child(4n-2), .webinars_events_list_main_card:nth-child(4n-1) {
+        width: 200px;
+    }
+}
+
+
+
+/* Screen size > 768px and <=1200px (tablets/small-laptops)*/
+@media (min-width: 769px) and (max-width: 1200px) {
+    .webinars_events_list_main_card:nth-child(4n-3), .webinars_events_list_main_card:nth-child(4n) {
+        width: calc(300px * 2 + 10px);
+    }
+    
+    .webinars_events_list_main_card:nth-child(4n-2), .webinars_events_list_main_card:nth-child(4n-1) {
+        width: 300px;
+    }
+}

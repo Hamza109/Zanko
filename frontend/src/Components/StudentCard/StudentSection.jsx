@@ -34,15 +34,11 @@ const StudentSection = () => {
   return (
     <section className="student-section">
       
-          <div className="gradient-text xl:inline lg:inline md:block ml-12 ">
-       Unibglobal
+          <div className=" font-semibold text-center text-4xl my-10 md:block ml-12 ">
+      Ambassadors
       </div>
-      <div className="subtext xl:inline lg:inline  md:block ">
-        : Talk to a student
-      </div>
+    
      
-     
-      <h2 className='text-black text-center mt-12'>Chat with a WPU Student</h2>
       <div className="student-cards">
         {students.map((student, index) => (
           <StudentCard key={index} {...student} />

@@ -1,0 +1,149 @@
+/* Buttons Section Styles */
+.uni_events_bttns button{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px 14px;
+}
+
+.uni_events_all_bttn_active,.uni_events_add_bttn_active{
+    box-shadow: #387AFF 0px 4px 10px -3px;
+}
+
+
+/* Add Events Section STEP 1*/
+.uni_events_add{
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 0px 2px 5px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uni_events_add_title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.uni_events_add_step{
+   color: #BDBDBD;
+   font-size: 12px;
+
+}
+
+.uni_events_add_main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uni_events_add_section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.uni_events_add_section label{
+    display: flex;
+    width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.uni_events_add_section input{
+    font-size: 14px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    width: 300px;
+    background-color: #F7F7F7;
+}
+
+.uni_events_add_section input:focus{
+    outline: none;
+}
+
+.uni_events_add_section_bttn button{
+    background-color: #4880FF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+
+/* Success Message */
+.uni_events_add_success_tick{
+    background-color: #59d603;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+
+
+/* Events List Section */
+.uni_event_list_section{
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+}
+
+.uni_event_list_title_section{
+    padding: 20px 0px;
+}
+
+.uni_event_list_month{
+    gap: 20px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #D5D5D5;
+    background-color: #FCFDFD;
+    cursor: pointer;
+    border: 1px solid #F5F6FA;
+}
+
+.uni_event_list_month p{
+    font-size: 12px;
+}
+
+.uni_event_list_month i{
+    font-size: 20px;
+}
+
+.uni_event_list_section_head{
+    background-color: #F1F4F9;
+    display: grid;
+    grid-template-columns: 25% 15% 20% 13% 13% 14%;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.uni_event_list_section_main{
+    display: grid;
+    grid-template-columns: 25% 15% 20% 13% 13% 14%;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    border-bottom: 1px solid #F5F6FA;
+}
+
+.uni_event_list_status_tag{
+   min-width: 95px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   color: #fff;
+   border-radius: 20px;;
+}

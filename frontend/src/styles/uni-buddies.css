@@ -1,0 +1,30 @@
+/* Ambassador List section */
+.uni_buddies_view_ambas{
+    padding: 50px 0px;
+}
+
+.uni_buddies_view_ambas_main{
+    box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;
+}
+
+.uni_buddies_view_ambas_section{
+    border-bottom: 1px solid #E6E5E5;
+    border-left: 1px solid #E6E5E5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.uni_buddies_view_ambas_section_row{
+    display:grid;
+    grid-template-columns: 13% 12% 12% 12% 12% 13% 13% 13%;
+    border-top: 1px solid #E6E5E5;
+}
+
+.uni_buddies_view_ambas_section_element{
+    border-right: 1px solid #E6E5E5;
+    padding: 10px;
+}
+
+.uni_buddies_view_ambas_section_element i:hover{
+    text-decoration: underline;
+}

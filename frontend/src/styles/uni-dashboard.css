@@ -1,16 +1,18 @@
 .uni_dashboard_container{
-    display: flex;
     height: 100%;
 }
 
-.uni_dash_main_content{
-    flex-grow: 1;
+.uni_dash_main{
+    margin-top: 70px;
+    margin-left: 220px;
+    padding: 50px 30px;
 }
+
+
 
 /* Stat Cards styling Section */
 .uni_dash_stat_cards{
-    padding: 50px 0px;
-    margin: 0px 20px;
+    padding-bottom: 50px;
 }
 
 .uni_dash_stat_card_{
@@ -52,7 +54,6 @@
 
 /* Event Section styling */
 .uni_dash_event_section{
-    margin: 0px 20px;
     padding: 20px;
     border-radius: 14px;
     box-shadow: rgba(0,0,0,0.1) 10px 10px 10px -5px;

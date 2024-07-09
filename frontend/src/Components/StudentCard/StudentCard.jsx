@@ -10,7 +10,7 @@ const StudentCard = ({ name, major, hometown, qualification, about }) => {
  const user={name:name}
  const dispatch=useDispatch()
   return (
-    <div className="white-shadow border rounded-lg max-w-sm mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14">
+    <div className="white-shadow border rounded-lg max-w-sm mx-auto mb-6 sm:mb-8 md:mb-10 ">
       <div className="inner-content">
         <div className="bg-black h-12 rounded-t-lg"></div> {/* Black bar at the top */}
         <div className="flex justify-center -mt-8">
