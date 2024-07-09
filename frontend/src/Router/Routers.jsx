@@ -10,6 +10,7 @@ import ChatLanding from '../Pages/ChatLanding';
 import Community from '../Pages/Community';
 import Guides from '../Pages/Guides';
 import WebinarsAndEvents from '../Pages/WebinarsAndEvents';
+import BookDemo from './../Pages/BookDemo';
 import GraduateAdmissions from '../Pages/GraduateAdmissions';
 import UndergradAdmissions from '../Pages/UndergradAdmissions';
 import InternationalRecruitment from '../Pages/InternationalRecruitment';
@@ -47,6 +48,8 @@ return (
         <Route path='/graduate-admissions'  element={<GraduateAdmissions/>} /> 
         <Route path='/undergrad-admissions'  element={<UndergradAdmissions/>} /> 
         <Route path='/international-recruitment'  element={<InternationalRecruitment/>} />
+        <Route path='/book-demo'  element={<BookDemo/>} />
+        
 
         {/* Dashboard Pages */}
         <Route path='/uni-dashboard' element={<UniversityDashboard />} />

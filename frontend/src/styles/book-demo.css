@@ -1,0 +1,318 @@
+.book_demo_main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Left Side Styling */
+.book_demo_left {
+    padding: 50px;
+    background-color: rgba(0,0,0,0.1);
+}
+.book_demo_zanko {
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.book_demo_title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.book_demo_subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.book_demo_review_card {
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 10px 2px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #fff;
+}
+
+.book_demo_review_img {
+    height: 60px;
+    width: 60px;
+}
+
+.book_demo_review_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.book_demo_review_desc {
+    font-size: 16px;
+}
+
+.book_demo_review_rating {
+    background-color: #fafafa;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.book_demo_review_rating i {
+    color: #ffdd00;
+    font-size: 20px;
+}
+
+/* Right Side Styling */
+.book_demo_right {
+    padding: 20px;
+}
+
+.book_demo_form_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.book_demo_form_container{
+    display: flex;
+    gap: 16px;
+}
+
+.book_demo_form_element {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.book_demo_form_element_2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book_demo_form_element label, .book_demo_form_element_2 label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.book_demo_form_element input {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #EDF4FA;
+    padding: 5px;
+}
+
+.book_demo_form_element_2 input {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #EDF4FA;
+    padding: 5px;
+}
+
+.book_demo_form_element input:focus,.book_demo_form_element_2 input:focus{
+    outline: none;
+}
+
+.book_demo_priorities_title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.book_demo_priorities_element label {
+    font-size: 16px;
+}
+
+.book_demo_priorities_element input{
+    height: 26px;
+    width: 26px;
+    -webkit-appearance: none; 
+    appearance: none;
+    background-color: #EDF4FA;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.book_demo_privacy_main input {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none; 
+    appearance: none;
+    background-color: #EDF4FA;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.book_demo_priorities_element input:checked,.book_demo_privacy_main input:checked {
+    background-color: #000000; 
+    border-color: #000000;
+}
+
+.book_demo_priorities_element input:checked::after {
+    content: '✔';
+    color: white;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+
+.book_demo_privacy_main input:checked::after {
+    content: '✔';
+    color: white;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.book_demo_form_bttn button{
+    background-color: #000000;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.book_demo_form_bttn button::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        to right,
+        #44BCFF 0%, 
+        #44B0FF 23%, 
+        #FF44EC 49%, 
+        #FF44EC 74%, 
+        #FF675E 100%
+    );
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.book_demo_privacy{
+    border-top: 0.5px solid #000000;
+    margin-top: 20px;
+}
+
+.book_demo_privacy_main{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) { 
+    .book_demo_main {
+        grid-template-columns: 1fr; 
+    }
+    .book_demo_left {
+        padding: 20px;
+    }
+    .book_demo_zanko {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .book_demo_title {
+        font-size: 22px;
+    }
+    
+    .book_demo_subtitle {
+        font-size: 16px;
+    }
+    
+    .book_demo_review_card {
+        max-width: 300px;
+    }
+    
+    .book_demo_review_img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .book_demo_review_desc {
+        font-size: 14px;
+    }
+    
+    .book_demo_review_rating {
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .book_demo_review_rating i {
+        font-size: 18px;
+    }
+
+    .book_demo_right {
+        padding: 20px;
+    }
+    
+    .book_demo_form_title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    .book_demo_form_element {
+        width: 100%;
+    }
+
+    .book_demo_form_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .book_demo_form_element label, .book_demo_form_element_2 label {
+        font-size: 14px;
+    }
+    
+    .book_demo_priorities_title {
+        font-size: 14px;
+    }
+    
+    .book_demo_priorities_element label {
+        font-size: 14px;
+    }
+    
+    .book_demo_priorities_element input {
+        height: 26px;
+        width: 26px;
+        -webkit-appearance: none; 
+        appearance: none;
+        background-color: #EDF4FA;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .book_demo_priorities_element input:checked::after {
+        content: '✔';
+        color: white;
+        display: block;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+}
+
+/* Screen size > 768px and <= 1200px (tablets/small-laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .book_demo_main {
+        grid-template-columns: 1fr; 
+    }
+}

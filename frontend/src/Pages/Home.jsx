@@ -15,16 +15,16 @@ import chatPage from '../assets/home/chatPage.png'
 
 const Home = () =>{
 
-const navigate = useNavigate();
+    const navigate = useNavigate();
 
-const customerRevRef1 = useRef();
-const customerRevRef2 = useRef();
-const customerRevRef3 = useRef();
+    const customerRevRef1 = useRef();
+    const customerRevRef2 = useRef();
+    const customerRevRef3 = useRef();
 
-const featuresVidRef = useRef();
+  const featuresVidRef = useRef();
 
-//function and states to handle playing and pausing videos
-const [currentVideo, setCurrentVideo] = useState(null);
+  //function and states to handle playing and pausing videos
+  const [currentVideo, setCurrentVideo] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   
@@ -60,7 +60,7 @@ return (
         <div className="pb-24 flex flex-col gap-5 items-center home_description">
             <h2 className="text-center font-semibold home_description_title">faucibus pulvinar elementum integer enim neque volutpat</h2>
             <h3 className="w-full font-normal text-center home_description_subtitle">faucibus pulvinar elementum integer enim neque volutpat faucibus pulvinar elementum integer enim neque volutpat</h3>
-            <div className="home_description_bttn" ><button>Book Demo</button></div>
+            <div className="home_description_bttn" ><button onClick={()=>navigate('/book-demo')}>Book Demo</button></div>
         </div>
 
 

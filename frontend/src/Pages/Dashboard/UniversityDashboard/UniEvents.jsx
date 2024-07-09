@@ -44,11 +44,11 @@ const UniEvents =()=>{
 
     //Handle submit 
     const handleSubmit = () => {
+
+         //Call the API here
+
         setAddEvents(3);
-
-        //Call the API here
-
-        //done message (5sec)
+        //done message (1sec)
         setTimeout(() => {
             window.location.reload();
         }, 1000);
