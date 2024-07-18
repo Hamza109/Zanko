@@ -10,7 +10,7 @@ import { useLocation } from 'react-router';
 import ChatWindow2 from '../Components/chat/chatWindow/ChatWindow2';
 const ChatWindowScreen = () => {
   const location=useLocation()
-  const {toChat,user}=location.state||{}
+  const {toChat,user,userMessages}=location.state||{}
     const [showUserList, setShowUserList] = useState(false);
     const [selectedUser, setSelectedUser] = useState(null);
    const dispatch=useDispatch()
@@ -49,8 +49,8 @@ useEffect(()=>{
             <ChatHeader header={headerText} onUserClick={handleUserClick} />
             {selectedUser ? (
               <>
-            <ChatWindow  />
-            {/* <ChatWindow2 /> */}
+            <ChatWindow  userMessages={userMessages}  />
+            <ChatWindow2  userMessages={userMessages} />
             </>
           ) : (
             <Inbox onUserClick={handleUserClick} />

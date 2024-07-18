@@ -1,36 +1,39 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ChatMessage from '../chatMessage/ChatMessage';
 import Microphone from '../../../assets/chatScreen/microphone.png';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import socket from '../../socket/socket';
 import './ChatWindow.css';
 
-const ChatWindow2 = () => {
+const ChatWindow2 = ({ userMessages }) => {
   const { userId } = useParams();
+  const location = useLocation();
   const currentUserId = 2; // Set the current user's ID
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    // Fetch initial messages (optional, depending on your backend implementation)
-    // socket.emit('fetchMessages', { userId });
+    // Fetch previous messages
+    setMessages(userMessages);
 
-    // Listen for incoming messages
-    socket.on('message', (message) => {
+    const messageListener = (message) => {
       console.log('Message received:', message);
       if (message.sender_id !== currentUserId) {
         setMessages((prevMessages) => [...prevMessages, message]);
       }
-    });
+    };
+
+    // Add the message listener
+    socket.on('message', messageListener);
 
     // Clean up the effect
     return () => {
-      socket.off('message');
+      socket.off('message', messageListener);
     };
-  }, []);
+  }, [currentUserId]);
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
     e.preventDefault();
     if (newMessage.trim() === '') return;
 
@@ -38,9 +41,27 @@ const ChatWindow2 = () => {
       sender_id: currentUserId, // ID of the current user sending the message
       receiver_id: 1, // ID of the receiver (you can adjust this as needed)
       message: newMessage,
-      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      sender_type: 1,
     };
 
+    try {
+      const response = await fetch('http://93.127.167.88:5000/api/chat/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(message),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Response data:', data);
+    } catch (err) {
+      console.log('Fetch error:', err);
+    }
     // Log the message before sending it
     console.log('Sending message:', message);
 
@@ -48,7 +69,7 @@ const ChatWindow2 = () => {
     socket.emit('sendMessage', message);
 
     // Optimistically add the message to the local state
-    setMessages([...messages, message]);
+    setMessages((prevMessages) => [...prevMessages, message]);
     setNewMessage('');
   };
 
@@ -62,7 +83,7 @@ const ChatWindow2 = () => {
     <div className="flex flex-col justify-between h-full p-4 bg-white chat-window">
       <div className="overflow-y-auto">
         <ul id="messages">
-          {messages.map((msg, index) => (
+          {Array.isArray(messages) && messages.map((msg, index) => (
             <ChatMessage key={index} message={msg} isSender={msg.sender_id === currentUserId} />
           ))}
         </ul>
@@ -70,7 +91,7 @@ const ChatWindow2 = () => {
       </div>
       <div className="flex items-center mt-4">
         <form id="sendMessageForm" onSubmit={handleSendMessage} className="flex-grow flex">
-          <button className="text-2xl">+</button>
+          <button type="button" className="text-2xl">+</button>
           <input
             id="messageInput"
             type="text"
